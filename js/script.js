@@ -83,12 +83,37 @@ class NavigationManager {
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', (e) => {
                 e.preventDefault();
-                const target = document.querySelector(anchor.getAttribute('href'));
+                const targetId = anchor.getAttribute('href');
+                const target = document.querySelector(targetId);
+                
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    // Check if we're on projects page and need to go back to main content
+                    const projectsPage = document.getElementById('projects-page');
+                    const mainContent = document.getElementById('main-content');
+                    
+                    if (projectsPage && mainContent && 
+                        projectsPage.style.display !== 'none' && 
+                        targetId !== '#projects') {
+                        
+                        // First show main content
+                        mainContent.style.display = 'block';
+                        projectsPage.style.display = 'none';
+                        window.scrollTo(0, 0);
+                        
+                        // Then scroll to target after a brief delay to ensure content is visible
+                        setTimeout(() => {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 100);
+                    } else {
+                        // Normal scroll behavior
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
                 this.closeMobileMenu();
             });
