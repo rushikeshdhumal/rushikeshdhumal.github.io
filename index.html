@@ -4,695 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushikesh Dhumal - Data Scientist</title>
+    <meta name="description" content="Data Scientist and Machine Learning Engineer with expertise in Python, ML, Cloud Computing, and Data Engineering.">
+    <meta name="keywords" content="Data Science, Machine Learning, Python, AWS, Azure, Analytics, AI">
+    <meta name="author" content="Rushikesh Dhumal">
+    
+    <!-- External Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --text-primary: #000000;
-            --text-secondary: #333333;
-            --text-muted: #666666;
-            --border-color: #e0e0e0;
-            --accent-color: #000000;
-            --hover-bg: #f0f0f0;
-            --card-bg: #ffffff;
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
-
-        [data-theme="dark"] {
-            --bg-primary: #000000;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #e0e0e0;
-            --text-muted: #aaaaaa;
-            --border-color: #333333;
-            --accent-color: #ffffff;
-            --hover-bg: #222222;
-            --card-bg: #111111;
-            --shadow: rgba(255, 255, 255, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-primary);
-            min-height: 100vh;
-            transition: all 0.3s ease;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: var(--bg-primary);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-
-        .nav-left {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-center {
-            display: flex;
-            align-items: center;
-            flex: 1;
-            justify-content: center;
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--text-secondary);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent-color);
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Dark Mode Toggle */
-        .theme-toggle {
-            background: none;
-            border: 2px solid var(--accent-color);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-        }
-
-        .theme-toggle:hover {
-            background: var(--hover-bg);
-        }
-
-        .theme-toggle i {
-            font-size: 1rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .hero p {
-            font-size: clamp(1.2rem, 3vw, 1.5rem);
-            margin-bottom: 2rem;
-            color: var(--text-secondary);
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background: var(--accent-color);
-            color: var(--bg-primary);
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid var(--accent-color);
-        }
-
-        .cta-button:hover {
-            background: var(--bg-primary);
-            color: var(--accent-color);
-            transform: translateY(-2px);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 5rem 0;
-            position: relative;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            margin-bottom: 3rem;
-            color: var(--text-primary);
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: var(--accent-color);
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-category {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px var(--shadow);
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px var(--shadow);
-        }
-
-        .skill-category h3 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .skill-tag {
-            background: var(--hover-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .skill-tag:hover {
-            background: var(--accent-color);
-            color: var(--bg-primary);
-            transform: scale(1.05);
-        }
-
-        /* Experience Timeline */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: var(--border-color);
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 3rem;
-            width: 50%;
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            padding-right: 2rem;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
-            padding-left: 2rem;
-        }
-
-        .timeline-content {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.5rem;
-            position: relative;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px var(--shadow);
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px var(--shadow);
-        }
-
-        .timeline-date {
-            color: var(--text-muted);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-title {
-            color: var(--text-primary);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-company {
-            color: var(--text-secondary);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            padding: 0.8rem 1.5rem;
-            border: 1px solid var(--border-color);
-            border-radius: 50px;
-            background: var(--card-bg);
-        }
-
-        .contact-link:hover {
-            background: var(--accent-color);
-            color: var(--bg-primary);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px var(--shadow);
-        }
-
-        /* Education & Certifications */
-        .edu-cert-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .edu-cert-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px var(--shadow);
-        }
-
-        .edu-cert-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px var(--shadow);
-        }
-
-        .card-title {
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .cert-item {
-            background: var(--hover-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .cert-item:hover {
-            background: var(--accent-color);
-            color: var(--bg-primary);
-            transform: translateX(5px);
-        }
-
-        .cert-link {
-            color: inherit;
-            text-decoration: none;
-            display: block;
-            width: 100%;
-        }
-
-        .cert-link:hover {
-            color: inherit;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: 2px solid var(--accent-color);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-        }
-
-        .mobile-menu-btn:hover {
-            background: var(--hover-bg);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            .nav-center {
-                display: none;
-            }
-
-            .nav-center.show {
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--bg-primary);
-                border-top: 1px solid var(--border-color);
-                box-shadow: 0 5px 15px var(--shadow);
-                z-index: 999;
-            }
-
-            .nav-center ul {
-                display: flex;
-                flex-direction: row;
-                gap: 2rem;
-            }
-
-            .nav-center.show ul {
-                display: flex;
-                flex-direction: column;
-                padding: 1rem;
-                gap: 0;
-            }
-
-            .nav-center.show ul li {
-                width: 100%;
-            }
-
-            .nav-center.show ul a {
-                display: block;
-                padding: 0.75rem 0;
-                width: 100%;
-                border-bottom: 1px solid var(--border-color);
-            }
-
-            .nav-center.show ul a:hover {
-                background: var(--hover-bg);
-                padding-left: 1rem;
-            }
-
-            .about-content {
-                text-align: center;
-            }
-
-            .timeline::before {
-                left: 20px;
-            }
-
-            .timeline-item {
-                width: 100%;
-                left: 0 !important;
-                padding-left: 50px !important;
-                padding-right: 0 !important;
-            }
-
-            .edu-cert-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .theme-toggle {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.8rem;
-            }
-
-            .mobile-menu-btn {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            section {
-                padding: 3rem 0;
-            }
-
-            .skill-category {
-                padding: 1.5rem;
-            }
-
-            .timeline-content {
-                padding: 1rem;
-            }
-        }
-
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Projects Page Styles */
-        .projects-hero {
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: var(--bg-secondary);
-        }
-
-        .project-showcase {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px var(--shadow);
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .project-title {
-            color: var(--text-primary);
-            font-size: 1.8rem;
-            margin: 0;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .project-link {
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-        }
-
-        .project-link:hover {
-            background: var(--accent-color);
-            color: var(--bg-primary);
-        }
-
-        .project-demo {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            padding: 2rem;
-            margin: 1rem 0;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .demo-placeholder {
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .tech-item {
-            background: var(--hover-bg);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-    </style>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="nav-content">
                 <div class="nav-left">
-                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
                         <i class="fas fa-bars"></i>
                         <span>Menu</span>
                     </button>
                 </div>
-                <div class="nav-center">
+                <div class="nav-center" id="nav-center">
                     <ul id="nav-menu">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#experience">Experience</a></li>
-                        <li><a href="javascript:void(0)" onclick="showProjectsPage()">Projects</a></li>
+                        <li><a href="#" id="projects-link">Projects</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-right">
-                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                         <i class="fas fa-moon" id="theme-icon"></i>
                         <span id="theme-text">Dark Mode</span>
                     </button>
@@ -944,300 +288,386 @@
             <div class="container">
                 <h1>Interactive Project Showcase</h1>
                 <p>Explore my data science projects with live demonstrations and implementations</p>
-                <button onclick="showMainContent()" class="cta-button" style="margin-top: 1rem;">← Back to Main</button>
+                <button id="back-to-main" class="cta-button" style="margin-top: 1rem;">← Back to Main</button>
             </div>
         </section>
 
         <div class="container">
-            <!-- Project 1: Gaming Churn Prediction -->
-            <div class="project-showcase">
-                <div class="project-header">
-                    <h2 class="project-title">Gaming Player Behavior Analysis & Churn Prediction</h2>
-                    <div class="project-links">
-                        <a href="https://github.com/rushikeshdhumal/gaming-churn-prediction" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <button class="project-link" onclick="toggleDemo('demo1')">
-                            <i class="fas fa-play"></i> Live Demo
-                        </button>
+            <div class="projects-grid">
+                <!-- Project 1: Gaming Churn Prediction -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Gaming Player Behavior Analysis & Churn Prediction</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/gaming-churn-prediction" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo1">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Steam API</span>
+                        <span class="tech-item">Random Forest</span>
+                        <span class="tech-item">XGBoost</span>
+                        <span class="tech-item">PostgreSQL</span>
+                    </div>
+                    <p>Engineered churn prediction models using Steam Web API, PostgreSQL, and 50K+ player records, achieving 89% precision with Random Forest/XGBoost. Implemented statistical hypothesis testing, time-series feature engineering, and cohort analysis in Python. Generated actionable retention strategies, potentially reducing churn by 15% and increasing player LTV by $12 per user.</p>
+                    <div id="demo1" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Churn Prediction Model Demo</h3>
+                            <p>Interactive demo would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Player behavior input form</li>
+                                <li>Real-time churn probability calculation</li>
+                                <li>Feature importance visualization</li>
+                                <li>Model performance metrics</li>
+                                <li>Cohort analysis dashboard</li>
+                            </ul>
+                            <p><em>Click "GitHub" to see the full implementation</em></p>
+                        </div>
                     </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-item">Python</span>
-                    <span class="tech-item">Steam API</span>
-                    <span class="tech-item">Random Forest</span>
-                    <span class="tech-item">XGBoost</span>
-                    <span class="tech-item">PostgreSQL</span>
-                </div>
-                <p>Engineered churn prediction models using 50K+ player records, achieving 89% precision. Implemented statistical hypothesis testing and cohort analysis, potentially reducing churn by 15%.</p>
-                <div id="demo1" class="project-demo" style="display: none;">
-                    <div class="demo-placeholder">
-                        <h3>Churn Prediction Model Demo</h3>
-                        <p>Interactive demo would include:</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li>Player behavior input form</li>
-                            <li>Real-time churn probability calculation</li>
-                            <li>Feature importance visualization</li>
-                            <li>Model performance metrics</li>
-                        </ul>
-                        <p><em>Click "View Implementation" to see the full code</em></p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 2: E-commerce Recommendation -->
-            <div class="project-showcase">
-                <div class="project-header">
-                    <h2 class="project-title">E-commerce Product Recommendation System</h2>
-                    <div class="project-links">
-                        <a href="https://github.com/rushikeshdhumal/ecommerce-recommendation-system" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <button class="project-link" onclick="toggleDemo('demo2')">
-                            <i class="fas fa-play"></i> Live Demo
-                        </button>
+                <!-- Project 2: E-commerce Recommendation -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">E-commerce Product Recommendation System</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/ecommerce-recommendation-system" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo2">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">TF-IDF</span>
+                        <span class="tech-item">K-Means</span>
+                        <span class="tech-item">Random Forest</span>
+                        <span class="tech-item">PCA</span>
+                        <span class="tech-item">Pandas</span>
+                    </div>
+                    <p>Engineered a hybrid ML pipeline processing the Flipkart e-commerce dataset with statistical validation and predictive modeling for product recommendations. Implemented TF-IDF content-based filtering, K-Means clustering with silhouette analysis, and Random Forest classification, achieving 87% F1-score. Applied hypothesis testing, data validation techniques, and PCA visualization to translate business problems into technical solutions, potentially increasing conversion rates by 18%.</p>
+                    <div id="demo2" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Recommendation Engine Demo</h3>
+                            <p>Interactive features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Product search and selection</li>
+                                <li>Similar products recommendation</li>
+                                <li>User-based collaborative filtering</li>
+                                <li>Recommendation confidence scores</li>
+                                <li>A/B testing for recommendation algorithms</li>
+                            </ul>
+                            <p><em>Full implementation available on GitHub</em></p>
+                        </div>
                     </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-item">TF-IDF</span>
-                    <span class="tech-item">K-Means</span>
-                    <span class="tech-item">Random Forest</span>
-                    <span class="tech-item">PCA</span>
-                    <span class="tech-item">Pandas</span>
-                </div>
-                <p>Built hybrid ML pipeline processing Flipkart dataset with 87% F1-score. Applied content-based filtering and clustering analysis, potentially increasing conversion rates by 18%.</p>
-                <div id="demo2" class="project-demo" style="display: none;">
-                    <div class="demo-placeholder">
-                        <h3>Recommendation Engine Demo</h3>
-                        <p>Interactive features would include:</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li>Product search and selection</li>
-                            <li>Similar products recommendation</li>
-                            <li>User-based collaborative filtering</li>
-                            <li>Recommendation confidence scores</li>
-                        </ul>
-                        <p><em>Full implementation available on GitHub</em></p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 3: Game Analytics Dashboard -->
-            <div class="project-showcase">
-                <div class="project-header">
-                    <h2 class="project-title">Game Performance Analytics Dashboard</h2>
-                    <div class="project-links">
-                        <a href="https://github.com/rushikeshdhumal/game-analytics-dashboard" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <button class="project-link" onclick="toggleDemo('demo3')">
-                            <i class="fas fa-play"></i> Live Demo
-                        </button>
+                <!-- Project 3: Game Analytics Dashboard -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Game Performance Analytics Dashboard & A/B Testing Framework</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/game-analytics-dashboard" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo3">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Real-time Analytics</span>
+                        <span class="tech-item">A/B Testing</span>
+                        <span class="tech-item">Plotly</span>
+                        <span class="tech-item">ETL</span>
+                        <span class="tech-item">Streamlit</span>
+                    </div>
+                    <p>Built real-time analytics platform processing Steam/Riot APIs data with automated ETL pipelines, statistical A/B testing (power analysis, significance testing), and interactive Plotly dashboards. Implemented anomaly detection, KPI forecasting, and automated reporting. Projected 20% improvement in feature adoption rates and $500K annual revenue optimization through data-driven decisions.</p>
+                    <div id="demo3" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Analytics Dashboard Demo</h3>
+                            <p>Dashboard components would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Real-time player activity metrics</li>
+                                <li>A/B test result visualization</li>
+                                <li>Performance KPI tracking</li>
+                                <li>Anomaly detection alerts</li>
+                                <li>Statistical significance testing</li>
+                            </ul>
+                            <p><em>Interactive charts and filters available in full version</em></p>
+                        </div>
                     </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-item">Real-time Analytics</span>
-                    <span class="tech-item">A/B Testing</span>
-                    <span class="tech-item">Plotly</span>
-                    <span class="tech-item">ETL</span>
-                    <span class="tech-item">Streamlit</span>
-                </div>
-                <p>Built real-time analytics platform with automated ETL pipelines and statistical A/B testing. Projected 20% improvement in feature adoption rates and $500K revenue optimization.</p>
-                <div id="demo3" class="project-demo" style="display: none;">
-                    <div class="demo-placeholder">
-                        <h3>Analytics Dashboard Demo</h3>
-                        <p>Dashboard components would include:</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li>Real-time player activity metrics</li>
-                            <li>A/B test result visualization</li>
-                            <li>Performance KPI tracking</li>
-                            <li>Anomaly detection alerts</li>
-                        </ul>
-                        <p><em>Interactive charts and filters available in full version</em></p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 4: SpaceX Prediction -->
-            <div class="project-showcase">
-                <div class="project-header">
-                    <h2 class="project-title">SpaceX Falcon9 Landing Prediction</h2>
-                    <div class="project-links">
-                        <a href="https://github.com/rushikeshdhumal/spacex-falcon9-prediction" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <button class="project-link" onclick="toggleDemo('demo4')">
-                            <i class="fas fa-play"></i> Live Demo
-                        </button>
+                <!-- Project 4: Multi-Platform Game Integration -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Multi-Platform Game Data Integration & ML Pipeline</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/multi-platform-game-integration" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo4">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">MLOps</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">APIs</span>
+                        <span class="tech-item">Ensemble Methods</span>
+                        <span class="tech-item">Collaborative Filtering</span>
+                    </div>
+                    <p>Architected scalable MLOps pipeline integrating Steam/Xbox APIs, MongoDB, and automated feature stores for cross-platform analytics. Developed collaborative filtering recommendation engine and LTV prediction models using ensemble methods. Estimated 25% increase in cross-platform engagement and $2M revenue uplift through personalized gaming experiences.</p>
+                    <div id="demo4" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Multi-Platform Integration Demo</h3>
+                            <p>Integration features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Cross-platform user matching</li>
+                                <li>Unified player analytics dashboard</li>
+                                <li>LTV prediction models</li>
+                                <li>Automated feature engineering</li>
+                                <li>Real-time recommendation engine</li>
+                            </ul>
+                            <p><em>MLOps pipeline with automated deployments</em></p>
+                        </div>
                     </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-item">Web Scraping</span>
-                    <span class="tech-item">ML Classification</span>
-                    <span class="tech-item">API Integration</span>
-                    <span class="tech-item">BeautifulSoup</span>
-                    <span class="tech-item">Folium</span>
+
+                <!-- Project 5: SpaceX Prediction -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">SpaceX Falcon9 First Stage Landing Prediction</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/spacex-falcon9-prediction" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo5">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Web Scraping</span>
+                        <span class="tech-item">ML Classification</span>
+                        <span class="tech-item">API Integration</span>
+                        <span class="tech-item">BeautifulSoup</span>
+                        <span class="tech-item">Folium</span>
+                    </div>
+                    <p>This project aims to predict the success of a SpaceX Falcon 9 first stage landing, which directly impacts launch costs. The process involves multiple steps: data collection from a Wikipedia page via web scraping using Python BeautifulSoup and from the SpaceX API, followed by data wrangling and analysis using various tools like SQL, Pandas, Matplotlib, and Folium. Finally, four supervised machine learning models (Support Vector Machine, Decision Tree, K-Nearest Neighbours, and Logistic Regression) are trained and their accuracy is evaluated to find the best model for predicting successful landings.</p>
+                    <div id="demo5" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Landing Prediction Tool</h3>
+                            <p>Prediction interface would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Launch parameters input form</li>
+                                <li>Success probability prediction</li>
+                                <li>Historical launch data visualization</li>
+                                <li>Cost savings calculator</li>
+                                <li>Interactive landing site maps</li>
+                            </ul>
+                            <p><em>Model comparison and accuracy metrics included</em></p>
+                        </div>
+                    </div>
                 </div>
-                <p>Predicted SpaceX Falcon 9 landing success using web-scraped data and SpaceX API. Trained and evaluated multiple ML models to optimize cost prediction accuracy.</p>
-                <div id="demo4" class="project-demo" style="display: none;">
-                    <div class="demo-placeholder">
-                        <h3>Landing Prediction Tool</h3>
-                        <p>Prediction interface would include:</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li>Launch parameters input form</li>
-                            <li>Success probability prediction</li>
-                            <li>Historical launch data visualization</li>
-                            <li>Cost savings calculator</li>
-                        </ul>
-                        <p><em>Model comparison and accuracy metrics included</em></p>
+
+                <!-- Project 6: Loan Default Analysis -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Loan Default Analysis & Risk Prediction</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/loan-default-analysis" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo6">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Machine Learning</span>
+                        <span class="tech-item">K-Nearest Neighbours</span>
+                        <span class="tech-item">Decision Tree</span>
+                        <span class="tech-item">SVM</span>
+                        <span class="tech-item">Logistic Regression</span>
+                    </div>
+                    <p>Worked on a dataset containing past loans information of 346 customers whose loans are already paid or defaulted. It includes fields such as Loan_status, Principal, Effective_date, Due_date, etc. Performed exploratory data analysis and wrangling. Normalized the data and trained 4 machine learning algorithms: K-Nearest Neighbours (KNN), Decision Tree, Support Vector Machine (SVM), and Logistic Regression. Tested the accuracy of the trained models using another dataset of 54 customers and accuracy metrics such as the Jaccard Index, F1 score, and Log Loss.</p>
+                    <div id="demo6" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Loan Risk Assessment Tool</h3>
+                            <p>Risk assessment features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Customer information input form</li>
+                                <li>Default probability calculation</li>
+                                <li>Risk scoring dashboard</li>
+                                <li>Model performance comparison</li>
+                                <li>Feature importance analysis</li>
+                            </ul>
+                            <p><em>Multiple ML algorithms with cross-validation</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Housing Price Prediction -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Housing Agency Price Prediction Model</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/housing-price-prediction" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo7">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Regression Analysis</span>
+                        <span class="tech-item">Pearson Correlation</span>
+                        <span class="tech-item">ANOVA</span>
+                        <span class="tech-item">Chi-square Test</span>
+                        <span class="tech-item">Data Visualization</span>
+                    </div>
+                    <p>Built a model for predicting housing prices based on the Boston Housing Agency dataset using statistical tests such as Pearson Correlation, ANOVA, Chi-square Test and Regression Analysis. Visualization of data using Python libraries such as matplotlib and seaborn. The project focuses on understanding the relationships between various housing features and their impact on price prediction accuracy.</p>
+                    <div id="demo7" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Housing Price Predictor</h3>
+                            <p>Price prediction features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Property features input form</li>
+                                <li>Real-time price estimation</li>
+                                <li>Statistical correlation analysis</li>
+                                <li>Market trend visualization</li>
+                                <li>Feature impact assessment</li>
+                            </ul>
+                            <p><em>Statistical testing and regression modeling</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Financial Data Analysis -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Financial Data Analysis Dashboard</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/financial-data-analysis" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo8">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Stock Analysis</span>
+                        <span class="tech-item">Web Scraping</span>
+                        <span class="tech-item">Data Visualization</span>
+                        <span class="tech-item">yfinance</span>
+                        <span class="tech-item">BeautifulSoup</span>
+                    </div>
+                    <p>Extracted the entire stock data of two companies - Tesla and GameStop, using the BeautifulSoup Python package for webscraping. Built a dashboard using Python data structures and Python libraries like NumPy, Pandas, plotly and yfinance. The project demonstrates comprehensive financial data analysis with interactive visualizations and real-time stock tracking capabilities.</p>
+                    <div id="demo8" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Stock Analysis Dashboard</h3>
+                            <p>Financial analysis features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Real-time stock price tracking</li>
+                                <li>Interactive price charts</li>
+                                <li>Technical indicators</li>
+                                <li>Company financial metrics</li>
+                                <li>Comparative analysis tools</li>
+                            </ul>
+                            <p><em>Live data integration with financial APIs</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Android App Market Analysis -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Android App Market Analysis</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/android-app-market-analysis" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo9">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Data Analysis</span>
+                        <span class="tech-item">Market Research</span>
+                        <span class="tech-item">Data Visualization</span>
+                        <span class="tech-item">Google Play Store</span>
+                        <span class="tech-item">User Reviews Analysis</span>
+                    </div>
+                    <p>Analyzed and visualized the data for Android App Market using 2 datasets, to drive growth of new apps: Dataset of over ten thousand apps from Google Play Store with 13 categories such as Type, Price, Genre, etc. Dataset of those respective apps' user reviews. The analysis provides insights into app performance, user sentiment, and market trends to guide app development strategies.</p>
+                    <div id="demo9" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>App Market Analytics Dashboard</h3>
+                            <p>Market analysis features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>App category performance metrics</li>
+                                <li>User review sentiment analysis</li>
+                                <li>Market trend visualization</li>
+                                <li>Pricing strategy insights</li>
+                                <li>Competitive analysis tools</li>
+                            </ul>
+                            <p><em>Comprehensive market intelligence for app developers</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Real Estate Investment Analysis -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Real Estate Investment Trust (REIT) Analysis</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/real-estate-investment-analysis" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo10">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Real Estate Analysis</span>
+                        <span class="tech-item">Investment Modeling</span>
+                        <span class="tech-item">Market Prediction</span>
+                        <span class="tech-item">King County Data</span>
+                        <span class="tech-item">Feature Engineering</span>
+                    </div>
+                    <p>Analyzed the King County, USA house prices dataset and built a model for predicting the market price of houses based on features such as square footage, number of bedrooms and bathrooms, waterfront view, etc. The project focuses on real estate investment analysis, providing tools for investors to make data-driven decisions in property markets.</p>
+                    <div id="demo10" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <h3>Real Estate Investment Calculator</h3>
+                            <p>Investment analysis features would include:</p>
+                            <ul style="text-align: left; margin-top: 1rem;">
+                                <li>Property valuation calculator</li>
+                                <li>Investment ROI predictor</li>
+                                <li>Market trend analysis</li>
+                                <li>Location-based insights</li>
+                                <li>Portfolio optimization tools</li>
+                            </ul>
+                            <p><em>Data-driven real estate investment strategies</em></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Theme toggle functionality
-        function toggleTheme() {
-            const html = document.documentElement;
-            const themeIcon = document.getElementById('theme-icon');
-            const themeText = document.getElementById('theme-text');
-            const currentTheme = html.getAttribute('data-theme');
-            
-            if (currentTheme === 'dark') {
-                html.removeAttribute('data-theme');
-                themeIcon.className = 'fas fa-moon';
-                themeText.textContent = 'Dark Mode';
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.setAttribute('data-theme', 'dark');
-                themeIcon.className = 'fas fa-sun';
-                themeText.textContent = 'Light Mode';
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-
-        // Load saved theme
-        function loadTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const themeIcon = document.getElementById('theme-icon');
-            const themeText = document.getElementById('theme-text');
-            
-            if (savedTheme === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                themeIcon.className = 'fas fa-sun';
-                themeText.textContent = 'Light Mode';
-            }
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('nav-menu');
-            const navCenter = document.querySelector('.nav-center');
-            
-            if (window.innerWidth <= 768) {
-                menu.classList.toggle('show');
-            }
-        }
-
-        // Page navigation
-        function showProjectsPage() {
-            document.getElementById('main-content').style.display = 'none';
-            document.getElementById('projects-page').style.display = 'block';
-            window.scrollTo(0, 0);
-            // Close mobile menu when navigating to projects page
-            closeMobileMenu();
-        }
-
-        function showMainContent() {
-            document.getElementById('main-content').style.display = 'block';
-            document.getElementById('projects-page').style.display = 'none';
-            window.scrollTo(0, 0);
-        }
-
-        // Project demo toggle
-        function toggleDemo(demoId) {
-            const demo = document.getElementById(demoId);
-            if (demo.style.display === 'none' || demo.style.display === '') {
-                demo.style.display = 'block';
-            } else {
-                demo.style.display = 'none';
-            }
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                // Close mobile menu after clicking a link
-                closeMobileMenu();
-            });
-        });
-
-        // Close mobile menu function
-        function closeMobileMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.remove('show');
-        }
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Active navigation highlight
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('nav a[href^="#"]');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Initialize theme on page load
-        document.addEventListener('DOMContentLoaded', loadTheme);
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navCenter = document.querySelector('.nav-center');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            const nav = document.querySelector('nav');
-            
-            if (!nav.contains(event.target)) {
-                closeMobileMenu();
-            }
-        });
-    </script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
