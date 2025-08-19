@@ -534,6 +534,11 @@ section {
     text-align: center;
 }
 
+/* Hide Live Demo buttons temporarily */
+.project-link[data-demo] {
+    display: none !important;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
