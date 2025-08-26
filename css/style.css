@@ -539,6 +539,11 @@ section {
     display: none !important;
 }
 
+/* Show Live Demo button only for gaming churn prediction project */
+.project-showcase:first-child .project-link[data-demo] {
+    display: inline-flex !important;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
