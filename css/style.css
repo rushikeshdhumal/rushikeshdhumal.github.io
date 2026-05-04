@@ -117,6 +117,14 @@ nav a:hover::after {
     width: 100%;
 }
 
+nav a.active {
+    color: var(--text-secondary);
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
 /* Theme Toggle */
 .theme-toggle {
     background: none;
@@ -204,6 +212,23 @@ nav a:hover::after {
     background: var(--bg-primary);
     color: var(--accent-color);
     transform: translateY(-2px);
+}
+
+.hero-cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-button-secondary {
+    background: var(--bg-primary);
+    color: var(--accent-color);
+}
+
+.cta-button-secondary:hover {
+    background: var(--accent-color);
+    color: var(--bg-primary);
 }
 
 /* Section Styles */
@@ -539,9 +564,31 @@ section {
     display: none !important;
 }
 
-/* Show Live Demo button only for gaming churn prediction project */
-.project-showcase:first-child .project-link[data-demo] {
-    display: inline-flex !important;
+.project-description {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.project-description.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-summary-toggle {
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border-radius: 5px;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-summary-toggle:hover {
+    background: var(--hover-bg);
 }
 
 .tech-stack {
@@ -692,6 +739,11 @@ section {
     .project-link {
         justify-content: center;
         width: 100%;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

@@ -51,6 +51,7 @@ class NavigationManager {
         this.mobileMenuBtn = document.getElementById('mobile-menu-btn');
         this.navCenter = document.getElementById('nav-center');
         this.projectsLink = document.getElementById('projects-link');
+        this.openProjectsBtns = document.querySelectorAll('[data-open-projects="true"]');
         this.backToMainBtn = document.getElementById('back-to-main');
         this.init();
     }
@@ -66,6 +67,12 @@ class NavigationManager {
         this.projectsLink?.addEventListener('click', (e) => {
             e.preventDefault();
             this.showProjectsPage();
+        });
+
+        this.openProjectsBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                this.showProjectsPage();
+            });
         });
 
         this.backToMainBtn?.addEventListener('click', () => {
@@ -216,6 +223,40 @@ class ProjectsManager {
     }
 }
 
+// Project Description Management
+class ProjectDescriptionManager {
+    constructor() {
+        this.maxLength = 430;
+        this.init();
+    }
+
+    init() {
+        document.querySelectorAll('.project-showcase > p').forEach((paragraph) => {
+            const textLength = paragraph.textContent.trim().length;
+            paragraph.classList.add('project-description');
+
+            if (textLength > this.maxLength) {
+                paragraph.classList.add('collapsed');
+                this.addToggleButton(paragraph);
+            }
+        });
+    }
+
+    addToggleButton(paragraph) {
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'project-summary-toggle';
+        toggle.textContent = 'Show more';
+
+        toggle.addEventListener('click', () => {
+            const isCollapsed = paragraph.classList.toggle('collapsed');
+            toggle.textContent = isCollapsed ? 'Show more' : 'Show less';
+        });
+
+        paragraph.insertAdjacentElement('afterend', toggle);
+    }
+}
+
 // Scroll Animations
 class ScrollAnimations {
     constructor() {
@@ -316,6 +357,7 @@ class PortfolioApp {
         this.themeManager = null;
         this.navigationManager = null;
         this.projectsManager = null;
+        this.projectDescriptionManager = null;
         this.scrollAnimations = null;
         this.performanceMonitor = null;
         this.init();
@@ -336,6 +378,7 @@ class PortfolioApp {
             this.themeManager = new ThemeManager();
             this.navigationManager = new NavigationManager();
             this.projectsManager = new ProjectsManager();
+            this.projectDescriptionManager = new ProjectDescriptionManager();
             this.scrollAnimations = new ScrollAnimations();
             this.performanceMonitor = new PerformanceMonitor();
 
