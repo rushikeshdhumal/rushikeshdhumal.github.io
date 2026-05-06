@@ -71,7 +71,8 @@ I'm a passionate Data Scientist pursuing my Master's in Data Science at Rutgers 
 6. **And 5 more projects** with detailed implementations
 
 ### 🏢 **Professional Experience**
-- **7 Internships** across tech, finance, and consulting
+- **2 years of experience** in data science and machine learning
+- **5 Internships** across tech, finance, FMCG, and consulting
 - **Production-grade ML pipelines** deployed at scale
 - **NLP-driven recommendation engines** for 600+ organizations
 - **Data infrastructure optimization** reducing query latency by 40%
@@ -80,33 +81,6 @@ I'm a passionate Data Scientist pursuing my Master's in Data Science at Rutgers 
 - [Microsoft Azure Data Scientist Associate DP-100](https://learn.microsoft.com/en-us/certifications/azure-data-scientist/)
 - [IBM Data Science Professional Certificate](https://www.coursera.org/professional-certificates/ibm-data-science)
 - [Codecademy Data Scientist Career Path](https://www.codecademy.com/learn/paths/data-science)
-
-## 🛠️ Local Development
-
-### Prerequisites
-- Web browser (Chrome, Firefox, Safari, Edge)
-- Text editor (VS Code, Sublime Text, etc.)
-
-### Running Locally
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rushikeshdhumal/rushikeshdhumal.github.io.git
-   cd rushikeshdhumal.github.io
-   ```
-
-2. **Open in browser**
-   ```bash
-   # Option 1: Double-click index.html
-   # Option 2: Use a local server
-   python -m http.server 8000
-   # Then visit: http://localhost:8000
-   ```
-
-3. **For development**
-   ```bash
-   # Use Live Server extension in VS Code
-   # Or any local development server
-   ```
 
 ## 📱 Browser Support
 
@@ -137,7 +111,6 @@ This portfolio is actively maintained and updated with:
 - **Email**: [r.dhumal@rutgers.edu](mailto:r.dhumal@rutgers.edu)
 - **LinkedIn**: [linkedin.com/in/rushikeshdhumal](https://linkedin.com/in/rushikeshdhumal/)
 - **GitHub**: [github.com/rushikeshdhumal](https://github.com/rushikeshdhumal)
-- **Phone**: +1 (732) 685-0337
 
 ## 📄 License
 

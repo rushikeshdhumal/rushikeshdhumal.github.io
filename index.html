@@ -369,12 +369,36 @@
                     <p>End‑to‑end NYC Yellow Taxi analytics pipeline: automated monthly ingestion (Airflow → Azure Blob → Snowflake), dbt transformations (medallion bronze→silver→gold), LightGBM demand forecasting + DiD congestion pricing analysis, model monitoring in MLflow, and Superset dashboards for KPIs and heatmaps.</p>
                     <div id="demo-nyc-tlc" class="project-demo" style="display: none;">
                         <div class="demo-placeholder">
-                            <img src="https://raw.githubusercontent.com/rushikeshdhumal/nyc-tlc-analytics/main/docs/assets/dashboard_overview.jpg" alt="NYC TLC dashboard overview" style="max-width:100%;height:auto;border-radius:6px;">
-                            <p style="margin-top:0.75rem;color:var(--text-muted)">Superset dashboard overview + MLflow experiment tracking (image from repo).</p>
                             <img src="docs/assets/DAG.png" alt="NYC TLC pipeline DAG" class="demo-image">
                             <p style="margin-top:0.5rem;color:var(--text-muted)">Pipeline DAG (Airflow / dbt / retrain flow).</p>
+                            <img src="https://raw.githubusercontent.com/rushikeshdhumal/nyc-tlc-analytics/main/docs/assets/dashboard_overview.jpg" alt="NYC TLC dashboard overview" style="max-width:100%;height:auto;border-radius:6px;">
+                            <p style="margin-top:0.75rem;color:var(--text-muted)">Superset dashboard overview + MLflow experiment tracking (image from repo).</p>
                         </div>
                     </div>
+                </div>
+
+                <!-- The Model Forge: Turn-based ML Production Simulator -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">The Model Forge</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/The-Model-Forge" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://model-forge--rdhumal.replit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Play Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">MLOps</span>
+                        <span class="tech-item">Model Deployment</span>
+                        <span class="tech-item">Drift Detection</span>
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-item">PostgreSQL</span>
+                    </div>
+                    <p class="project-description collapsed">The Model Forge is a turn-based machine learning production simulator where you manage a live model through 14 days of incidents, tradeoffs, and operational pressure. Balance precision, recall, cost, freshness, and SLA adherence as you make high-stakes decisions, protect your production pipeline, and aim for the strongest final score. The platform includes account creation, password recovery, save/load, and a public leaderboard, all backed by a contract-first API, PostgreSQL, and a secure monorepo architecture.</p>
+                    <img src="docs/assets/The_Model_Forge.png" alt="The Model Forge game UI screenshot" class="demo-image">
                 </div>
 
                 <!-- Project -2: ATHENA Agentic MLOps Platform -->
@@ -577,210 +601,7 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Loan Default Analysis -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Loan Default Analysis & Risk Prediction</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/Loan-Default-Analysis" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo6">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Machine Learning</span>
-                        <span class="tech-item">K-Nearest Neighbours</span>
-                        <span class="tech-item">Decision Tree</span>
-                        <span class="tech-item">SVM</span>
-                        <span class="tech-item">Logistic Regression</span>
-                    </div>
-                    <p>Worked on a dataset containing past loans information of 346 customers whose loans are already
-                        paid or defaulted. It includes fields such as Loan_status, Principal, Effective_date, Due_date,
-                        etc. Performed exploratory data analysis and wrangling. Normalized the data and trained 4
-                        machine learning algorithms: K-Nearest Neighbours (KNN), Decision Tree, Support Vector Machine
-                        (SVM), and Logistic Regression. Tested the accuracy of the trained models using another
-                        dataset of 54 customers and accuracy metrics such as the Jaccard Index, F1 score, and Log Loss.</p>
-                    <div id="demo6" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Loan Risk Assessment Tool</h3>
-                            <p>Risk assessment features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Customer information input form</li>
-                                <li>Default probability calculation</li>
-                                <li>Risk scoring dashboard</li>
-                                <li>Model performance comparison</li>
-                                <li>Feature importance analysis</li>
-                            </ul>
-                            <p><em>Multiple ML algorithms with cross-validation</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Housing Price Prediction -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Housing Agency Price Prediction Model</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/Housing-Agency-Project" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo7">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Regression Analysis</span>
-                        <span class="tech-item">Pearson Correlation</span>
-                        <span class="tech-item">ANOVA</span>
-                        <span class="tech-item">Chi-square Test</span>
-                        <span class="tech-item">Data Visualization</span>
-                    </div>
-                    <p>Built a model for predicting housing prices based on the Boston Housing Agency dataset using
-                        statistical tests such as Pearson Correlation, ANOVA, Chi-square Test and Regression Analysis.
-                        Visualization of data using Python libraries such as matplotlib and seaborn. The project
-                        focuses on understanding the relationships between various housing features and their impact
-                        on price prediction accuracy.</p>
-                    <div id="demo7" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Housing Price Predictor</h3>
-                            <p>Price prediction features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Property features input form</li>
-                                <li>Real-time price estimation</li>
-                                <li>Statistical correlation analysis</li>
-                                <li>Market trend visualization</li>
-                                <li>Feature impact assessment</li>
-                            </ul>
-                            <p><em>Statistical testing and regression modeling</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Financial Data Analysis -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Financial Data Analysis Dashboard</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/Financial-Data-Analysis" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo8">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Stock Analysis</span>
-                        <span class="tech-item">Web Scraping</span>
-                        <span class="tech-item">Data Visualization</span>
-                        <span class="tech-item">yfinance</span>
-                        <span class="tech-item">BeautifulSoup</span>
-                    </div>
-                    <p>Extracted the entire stock data of two companies - Tesla and GameStop, using the BeautifulSoup
-                        Python package for webscraping. Built a dashboard using Python data structures and Python
-                        libraries like NumPy, Pandas, plotly and yfinance. The project demonstrates comprehensive
-                        financial data analysis with interactive visualizations and real-time stock tracking
-                        capabilities.</p>
-                    <div id="demo8" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Stock Analysis Dashboard</h3>
-                            <p>Financial analysis features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Real-time stock price tracking</li>
-                                <li>Interactive price charts</li>
-                                <li>Technical indicators</li>
-                                <li>Company financial metrics</li>
-                                <li>Comparative analysis tools</li>
-                            </ul>
-                            <p><em>Live data integration with financial APIs</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Android App Market Analysis -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Android App Market Analysis</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/Android-App-Market-Analysis" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo9">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Data Analysis</span>
-                        <span class="tech-item">Market Research</span>
-                        <span class="tech-item">Data Visualization</span>
-                        <span class="tech-item">Google Play Store</span>
-                        <span class="tech-item">User Reviews Analysis</span>
-                    </div>
-                    <p>Analyzed and visualized the data for Android App Market using 2 datasets, to drive growth of
-                        new apps: Dataset of over ten thousand apps from Google Play Store with 13 categories such as
-                        Type, Price, Genre, etc. Dataset of those respective apps' user reviews. The analysis provides
-                        insights into app performance, user sentiment, and market trends to guide app development
-                        strategies.</p>
-                    <div id="demo9" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>App Market Analytics Dashboard</h3>
-                            <p>Market analysis features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>App category performance metrics</li>
-                                <li>User review sentiment analysis</li>
-                                <li>Market trend visualization</li>
-                                <li>Pricing strategy insights</li>
-                                <li>Competitive analysis tools</li>
-                            </ul>
-                            <p><em>Comprehensive market intelligence for app developers</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7: Real Estate Investment Analysis -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Real Estate Investment Trust (REIT) Analysis</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/Real-Estate-Investment-Trust-Project" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo10">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Real Estate Analysis</span>
-                        <span class="tech-item">Investment Modeling</span>
-                        <span class="tech-item">Market Prediction</span>
-                        <span class="tech-item">King County Data</span>
-                        <span class="tech-item">Feature Engineering</span>
-                    </div>
-                    <p>Analyzed the King County, USA house prices dataset and built a model for predicting the market
-                        price of houses based on features such as square footage, number of bedrooms and bathrooms,
-                        waterfront view, etc. The project focuses on real estate investment analysis, providing tools
-                        for investors to make data-driven decisions in property markets.</p>
-                    <div id="demo10" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Real Estate Investment Calculator</h3>
-                            <p>Investment analysis features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Property valuation calculator</li>
-                                <li>Investment ROI predictor</li>
-                                <li>Market trend analysis</li>
-                                <li>Location-based insights</li>
-                                <li>Portfolio optimization tools</li>
-                            </ul>
-                            <p><em>Data-driven real estate investment strategies</em></p>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!-- Project 8: E-commerce Recommendation -->
                 <div class="project-showcase">
@@ -824,86 +645,7 @@
                     </div>
                 </div>
 
-                <!-- Project 9: Game Analytics Dashboard -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Game Performance Analytics Dashboard & A/B Testing Framework</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/game-analytics-dashboard" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo3">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">Real-time Analytics</span>
-                        <span class="tech-item">A/B Testing</span>
-                        <span class="tech-item">Plotly</span>
-                        <span class="tech-item">ETL</span>
-                        <span class="tech-item">Streamlit</span>
-                    </div>
-                    <p>Built real-time analytics platform processing Steam/Riot APIs data with automated ETL pipelines,
-                        statistical A/B testing (power analysis, significance testing), and interactive Plotly
-                        dashboards. Implemented anomaly detection, KPI forecasting, and automated reporting.
-                        Projected 20% improvement in feature adoption rates and $500K annual revenue optimization
-                        through data-driven decisions.</p>
-                    <div id="demo3" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Analytics Dashboard Demo</h3>
-                            <p>Dashboard components would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Real-time player activity metrics</li>
-                                <li>A/B test result visualization</li>
-                                <li>Performance KPI tracking</li>
-                                <li>Anomaly detection alerts</li>
-                                <li>Statistical significance testing</li>
-                            </ul>
-                            <p><em>Interactive charts and filters available in full version</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 10: Multi-Platform Game Integration -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Multi-Platform Game Data Integration & ML Pipeline</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/multi-platform-gaming-analytics" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo4">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">MLOps</span>
-                        <span class="tech-item">MongoDB</span>
-                        <span class="tech-item">APIs</span>
-                        <span class="tech-item">Ensemble Methods</span>
-                        <span class="tech-item">Collaborative Filtering</span>
-                    </div>
-                    <p>Architected scalable MLOps pipeline integrating Steam/Xbox APIs, MongoDB, and automated
-                        feature stores for cross-platform analytics. Developed collaborative filtering recommendation
-                        engine and LTV prediction models using ensemble methods. Estimated 25% increase in
-                        cross-platform engagement and $2M revenue uplift through personalized gaming experiences.</p>
-                    <div id="demo4" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Multi-Platform Integration Demo</h3>
-                            <p>Integration features would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Cross-platform user matching</li>
-                                <li>Unified player analytics dashboard</li>
-                                <li>LTV prediction models</li>
-                                <li>Automated feature engineering</li>
-                                <li>Real-time recommendation engine</li>
-                            </ul>
-                            <p><em>MLOps pipeline with automated deployments</em></p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

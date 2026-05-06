@@ -600,6 +600,11 @@ section {
     overflow: hidden;
 }
 
+/* Hide screenshot when description is collapsed */
+.project-description.collapsed ~ .demo-image {
+    display: none !important;
+}
+
 .project-summary-toggle {
     border: 1px solid var(--border-color);
     background: var(--card-bg);
