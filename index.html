@@ -344,6 +344,39 @@
         <div class="container">
             <div class="projects-grid">
 
+                <!-- New Project: NYC TLC Analytics Pipeline (featured) -->
+                <div class="project-showcase featured">
+                    <div class="project-header">
+                        <h2 class="project-title">NYC TLC Analytics Pipeline</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/nyc-tlc-analytics" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link" data-demo="demo-nyc-tlc">
+                                <i class="fas fa-play"></i> Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Airflow</span>
+                        <span class="tech-item">Azure Blob</span>
+                        <span class="tech-item">Snowflake</span>
+                        <span class="tech-item">dbt</span>
+                        <span class="tech-item">LightGBM</span>
+                        <span class="tech-item">MLflow</span>
+                        <span class="tech-item">Superset</span>
+                    </div>
+                    <p>End‑to‑end NYC Yellow Taxi analytics pipeline: automated monthly ingestion (Airflow → Azure Blob → Snowflake), dbt transformations (medallion bronze→silver→gold), LightGBM demand forecasting + DiD congestion pricing analysis, model monitoring in MLflow, and Superset dashboards for KPIs and heatmaps.</p>
+                    <div id="demo-nyc-tlc" class="project-demo" style="display: none;">
+                        <div class="demo-placeholder">
+                            <img src="https://raw.githubusercontent.com/rushikeshdhumal/nyc-tlc-analytics/main/docs/assets/dashboard_overview.jpg" alt="NYC TLC dashboard overview" style="max-width:100%;height:auto;border-radius:6px;">
+                            <p style="margin-top:0.75rem;color:var(--text-muted)">Superset dashboard overview + MLflow experiment tracking (image from repo).</p>
+                            <img src="docs/assets/DAG.png" alt="NYC TLC pipeline DAG" class="demo-image">
+                            <p style="margin-top:0.5rem;color:var(--text-muted)">Pipeline DAG (Airflow / dbt / retrain flow).</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project -2: ATHENA Agentic MLOps Platform -->
                 <div class="project-showcase">
                     <div class="project-header">

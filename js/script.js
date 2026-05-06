@@ -235,7 +235,11 @@ class ProjectDescriptionManager {
             const textLength = paragraph.textContent.trim().length;
             paragraph.classList.add('project-description');
 
-            if (textLength > this.maxLength) {
+            // If project is marked featured, leave expanded
+            const container = paragraph.closest('.project-showcase');
+            const isFeatured = container && container.classList.contains('featured');
+
+            if (!isFeatured && textLength > this.maxLength) {
                 paragraph.classList.add('collapsed');
                 this.addToggleButton(paragraph);
             }

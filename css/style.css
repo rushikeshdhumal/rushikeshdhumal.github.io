@@ -500,6 +500,16 @@ section {
     box-shadow: 0 5px 15px var(--shadow);
 }
 
+.project-showcase.featured {
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+}
+
+.project-showcase.featured .project-title {
+    font-size: 2rem;
+}
+
 .project-header {
     display: flex;
     justify-content: space-between;
@@ -559,9 +569,23 @@ section {
     text-align: center;
 }
 
+/* Demo image responsive styling */
+.demo-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 0.75rem;
+    display: block;
+}
+
 /* Hide Live Demo buttons temporarily */
 .project-link[data-demo] {
     display: none !important;
+}
+
+/* Unhide Live Demo button only for the featured project */
+.project-showcase.featured .project-link[data-demo] {
+    display: inline-flex !important;
 }
 
 .project-description {
