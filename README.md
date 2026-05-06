@@ -1,58 +1,111 @@
-# Rushikesh Dhumal - Data Science Portfolio
+# Rushikesh Dhumal – Data Scientist, ML Engineer, Data Engineer
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Frushikeshdhumal.github.io)](https://rushikeshdhumal.github.io)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue)](https://rushikeshdhumal.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> A modern, responsive portfolio website showcasing my journey as a Data Scientist and Machine Learning Engineer.
+> **📊 Production-grade ML pipelines | 🏗️ Enterprise data engineering | 📈 ML model deployment | 🔍 Business-driven analytics**
+> 
+> A modern, interactive portfolio showcasing end-to-end data projects targeting **Data Engineering**, **Data Science**, **Machine Learning**, and **Business Intelligence** roles.
 
-## 🌐 Live Website
+## 🌐 Live Portfolio
 
 **[https://rushikeshdhumal.github.io](https://rushikeshdhumal.github.io)**
 
-## 👨‍💻 About Me
+## 👨‍💻 About
 
-I'm a passionate Data Scientist pursuing my Master's in Data Science at Rutgers University with a GPA of 3.57/4.0. With expertise spanning machine learning, cloud computing, and data engineering, I transform complex data into actionable insights that drive business growth.
+**Data Scientist & ML Engineer** pursuing Master's in Data Science at Rutgers University (GPA: 3.6/4.0) with **5+ internships** and **2+ years professional experience** across IT, fintech, and retail. 
 
-## 🚀 Features
+**Specialization:**
+- 🏗️ **Data Engineering:** ETL pipelines (Airflow, Spark, dbt), cloud data warehousing (Snowflake, Azure), real-time streaming (Kafka)
+- 🤖 **Machine Learning:** Classification (LightGBM, XGBoost), recommendation engines, demand forecasting, production model deployment
+- 📊 **ML Ops & Production:** Model monitoring (MLflow), calibration, threshold optimization, SHAP explainability, containerization
+- 📈 **Business Intelligence:** Dashboarding (Power BI, Tableau, Superset), data visualization, SQL optimization, KPI analysis
+- 🚀 **Agentic AI:** LangChain/LangGraph workflows, RAG systems, multi-agent orchestration
 
-### 🎨 **Modern Design**
-- Clean, professional black & white theme
-- Dark mode toggle with system preference detection
-- Fully responsive design optimized for all devices
-- Smooth animations and transitions
+**Career Focus:** Building scalable, production-ready data solutions that balance technical rigor with measurable business impact.
 
-### 📱 **Accessibility First**
-- Mobile-optimized navigation with collapsible menu
-- High contrast colors for readability
-- Keyboard navigation support
-- Screen reader friendly
+---
 
-### 💼 **Professional Showcase**
-- **Experience Timeline**: 7 internships across various industries
-- **Skills Matrix**: Comprehensive technical skills categorization
-- **Project Portfolio**: 10+ ML projects with interactive demos
-- **Education & Certifications**: Academic credentials with direct links
+## 🚀 Featured Projects
 
-### 🛠 **Interactive Projects Section**
-- Dedicated projects page with live demo placeholders
-- Direct GitHub repository links
-- Technology stack highlights
-- Detailed project descriptions
+| Project | Domain | Key Achievements |
+|---------|--------|------------------|
+| **NYC TLC Analytics Pipeline** | Data Eng + ML | Monthly ETL (Airflow), medallion warehouse, LightGBM demand forecast, MLflow monitoring |
+| **Loan Default Risk Scorer** | ML + DS | 0.7567 AUC, 63.38% calibration improvement, $7.3M business impact, SHAP explainability |
+| **The Model Forge** | MLOps | Turn-based ML simulator, monorepo, contract-first API, leaderboard system |
 
-## 💻 Technical Stack
 
-### Frontend Technologies
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS Grid & Flexbox
-- **JavaScript (ES6+)** - Interactive functionality
-- **Font Awesome** - Professional icons
+## 💻 Technical Skills by Domain
 
-### Design Features
-- CSS Custom Properties for theming
-- CSS Grid & Flexbox for responsive layouts
-- Intersection Observer API for scroll animations
-- Local Storage for theme persistence
+### **Data Engineering**
+- **Orchestration & Workflow:** Apache Airflow, Databricks, dbt (medallion architecture)
+- **Data Warehousing:** Snowflake, Azure SQL Database, PostgreSQL, MongoDB
+- **Processing Engines:** Apache Spark, Pandas, NumPy
+- **Messaging & Streaming:** Apache Kafka, Redis
+- **Cloud Platforms:** Azure (Blob Storage, DevOps, ML Studio), AWS (S3, RDS, SageMaker)
+- **ETL & Data Pipelines:** Custom Python pipelines, API integration, web scraping
+
+### **Machine Learning & Data Science**
+- **ML Frameworks:** scikit-learn, TensorFlow, PyTorch, Keras, LightGBM, XGBoost
+- **Advanced Techniques:** Ensemble methods, gradient boosting, class imbalance handling, model calibration
+- **Explainability:** SHAP (TreeExplainer), feature importance analysis, LIME
+- **NLP:** spaCy, NLTK, text classification, recommendation engines
+- **Computer Vision:** OpenCV, image processing
+- **Model Deployment:** MLflow, pickle serialization, production inference templates
+
+### **ML Ops & Production Systems**
+- **Model Management:** MLflow experiment tracking, versioning, registry
+- **API Development:** FastAPI, Express.js, RESTful design, JWT authentication
+- **Containerization:** Docker, deployment pipelines
+- **Agentic AI:** LangChain, LangGraph, RAG systems, tool calling, multi-agent workflows
+- **Monitoring:** Calibration drift, AUC drift, approval rate tracking
+
+### **Business Intelligence & Analytics**
+- **BI Tools:** Power BI, Tableau, Qlik Sense, Looker Studio, Superset, Streamlit
+- **SQL & Databases:** Advanced SQL (query optimization, CTEs, window functions), PostgreSQL, Snowflake
+- **Data Visualization:** Interactive dashboards, KPI tracking, real-time analytics
+- **Statistical Analysis:** Hypothesis testing, A/B testing, cohort analysis, time-series forecasting
+
+### **Programming Languages & Frameworks**
+- **Python (Expert):** Pandas, NumPy, Scikit-learn, FastAPI, Streamlit
+- **SQL (Expert):** Complex queries, optimization, window functions
+- **TypeScript/JavaScript:** React, Vite, full-stack applications
+- **Other:** R, PowerShell, Git, SAS, MATLAB, C++, C
+
+### **Professional Certifications**
+- ✅ **Microsoft Azure Data Scientist Associate (DP-100)**
+- ✅ **Snowflake Data Engineering Professional Certificate**
+- ✅ **IBM Data Science Professional Certificate**
+
+---
+
+## 🌟 Key Highlights
+
+| Category | Achievement |
+|----------|-------------|
+| **Model Performance** | 0.7567 AUC on 307k+ loan applications, 63.38% calibration improvement |
+| **Business Impact** | $7.3M cost savings vs. baseline, 86.42% approval rate maintained |
+| **Production Systems** | Deployed ML models with monitoring, calibration, and threshold optimization |
+| **Data Scale** | Processed 300+ datasets, 50k+ records, real-time streaming pipelines |
+| **Experience** | 5+ internships, 2+ years professional experience, 7 companies across 5 industries |
+| **Specialization** | Full-stack: from data ingestion → preprocessing → ML modeling → deployment → monitoring |
+
+---
+
+## 📱 Portfolio Website Features
+
+### 🎨 **Modern, Recruiter-Friendly Design**
+- Clean, professional dark/light theme with seamless toggle
+- Mobile-optimized with responsive navigation
+- Interactive project section with live demos (NYC TLC Analytics, The Model Forge)
+- Direct GitHub links for code exploration
+
+### 📊 **Comprehensive Content**
+- **Experience Timeline:** 7 career positions with quantified impact
+- **Skills Matrix:** 60+ technologies organized by domain
+- **Projects Showcase:** 5+ interactive projects with tech stacks and results
+- **Education:** Rutgers MS in Data Science (3.57 GPA) + 3 professional certifications
 
 ### Hosting & Deployment
 - **GitHub Pages** - Free, reliable hosting
@@ -60,51 +113,21 @@ I'm a passionate Data Scientist pursuing my Master's in Data Science at Rutgers 
 - **HTTPS Enabled** - Secure by default
 - **Automatic Deployment** - Updates on git push
 
-## 📊 Portfolio Highlights
+## � Quick Links for Hiring Managers
 
-### 🤖 **Machine Learning Projects**
-1. **Gaming Churn Prediction** - 89% precision with 50K+ player records
-2. **E-commerce Recommendation System** - 87% F1-score on Flipkart dataset
-3. **Game Analytics Dashboard** - Real-time analytics with A/B testing
-4. **SpaceX Landing Prediction** - Multi-model comparison for cost optimization
-5. **Financial Data Analysis** - Tesla & GameStop stock analysis
-6. **And 5 more projects** with detailed implementations
+### 👤 Profile & Contact
+- **Portfolio:** https://rushikeshdhumal.github.io
+- **GitHub:** https://github.com/rushikeshdhumal
+- **LinkedIn:** https://linkedin.com/in/rushikeshdhumal/
+- **Email:** r.dhumal@rutgers.edu
 
-### 🏢 **Professional Experience**
-- **2 years of experience** in data science and machine learning
-- **5 Internships** across tech, finance, FMCG, and consulting
-- **Production-grade ML pipelines** deployed at scale
-- **NLP-driven recommendation engines** for 600+ organizations
-- **Data infrastructure optimization** reducing query latency by 40%
+### 🎯 Role-Specific Project Links
+- **Data Engineering roles:** NYC TLC Analytics Pipeline (Airflow, Snowflake, dbt)
+- **Data Science roles:** Loan Default Risk Scorer, Gaming Churn Prediction, E-commerce Recommendation
+- **ML Engineering roles:** The Model Forge, ATHENA MLOps Platform
+- **BI/Analytics roles:** NYC TLC Dashboards, Trading Platform, Nestle Sales Analytics
 
-### 🎓 **Certifications**
-- [Microsoft Azure Data Scientist Associate DP-100](https://learn.microsoft.com/en-us/certifications/azure-data-scientist/)
-- [IBM Data Science Professional Certificate](https://www.coursera.org/professional-certificates/ibm-data-science)
-- [Codecademy Data Scientist Career Path](https://www.codecademy.com/learn/paths/data-science)
-
-## 📱 Browser Support
-
-| Browser | Version | Status |
-|---------|---------|--------|
-| Chrome  | 80+     | ✅ Fully Supported |
-| Firefox | 75+     | ✅ Fully Supported |
-| Safari  | 13+     | ✅ Fully Supported |
-| Edge    | 80+     | ✅ Fully Supported |
-
-## 🔄 Updates & Maintenance
-
-This portfolio is actively maintained and updated with:
-- New project additions
-- Experience updates
-- Technology stack enhancements
-- Performance optimizations
-
-## 📈 Performance
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, SEO)
-- **Mobile Friendly**: Google Mobile-Friendly Test Passed
-- **Load Time**: < 2 seconds on standard connections
-- **SEO Optimized**: Meta tags, semantic HTML, structured data
+---
 
 ## 🤝 Connect With Me
 
@@ -112,20 +135,15 @@ This portfolio is actively maintained and updated with:
 - **LinkedIn**: [linkedin.com/in/rushikeshdhumal](https://linkedin.com/in/rushikeshdhumal/)
 - **GitHub**: [github.com/rushikeshdhumal](https://github.com/rushikeshdhumal)
 
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- **Font Awesome** for professional icons
-- **Google Fonts** for typography
-- **GitHub Pages** for reliable hosting
-- **Rutgers University** for academic support
-
 ---
 
-### 🌟 **Interested in collaborating or hiring?**
-Feel free to reach out! I'm always open to discussing new opportunities, data science projects, or just connecting with fellow practitioners in the field.
+### 🎯 **Interested in collaborating or hiring?**
+I'm actively seeking roles in **Data Engineering**, **Data Science**, **ML Engineering**, and **Business Intelligence**. Whether it's building production ML pipelines, designing data warehouses, or creating scalable analytics platforms, I'm ready to contribute.
 
-**[View Live Portfolio →](https://rushikeshdhumal.github.io)**
+**[Explore the full portfolio →](https://rushikeshdhumal.github.io)**
