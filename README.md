@@ -88,7 +88,7 @@
 | **Business Impact** | $7.3M cost savings vs. baseline, 86.42% approval rate maintained |
 | **Production Systems** | Deployed ML models with monitoring, calibration, and threshold optimization |
 | **Data Scale** | Processed 300+ datasets, 50k+ records, real-time streaming pipelines |
-| **Experience** | 5+ internships, 2+ years professional experience, 7 companies across 5 industries |
+| **Experience** | 5+ internships, 2+ years professional experience|
 | **Specialization** | Full-stack: from data ingestion → preprocessing → ML modeling → deployment → monitoring |
 
 ---
@@ -105,7 +105,7 @@
 - **Experience Timeline:** 7 career positions with quantified impact
 - **Skills Matrix:** 60+ technologies organized by domain
 - **Projects Showcase:** 5+ interactive projects with tech stacks and results
-- **Education:** Rutgers MS in Data Science (3.57 GPA) + 3 professional certifications
+- **Education:** Rutgers MS in Data Science (3.6 GPA) + 3 professional certifications
 
 ### Hosting & Deployment
 - **GitHub Pages** - Free, reliable hosting
