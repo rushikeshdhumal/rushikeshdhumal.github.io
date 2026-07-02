@@ -4,9 +4,9 @@
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue)](https://rushikeshdhumal.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **📊 Production-grade ML pipelines | 🏗️ Enterprise data engineering | 📈 ML model deployment | 🔍 Business-driven analytics**
+> **📊 Production-grade ML pipelines | 🏗️ Enterprise data engineering | 🤖 HPC-scale LLM training | 📈 ML model deployment | 🔍 Business-driven analytics**
 > 
-> A modern, interactive portfolio showcasing end-to-end data projects targeting **Data Engineering**, **Data Science**, **Machine Learning**, and **Business Intelligence** roles.
+> A modern, interactive portfolio showcasing end-to-end data and AI projects targeting **Data Engineering**, **Data Science**, **Machine Learning**, **MLOps**, and **Business Intelligence** roles.
 
 ## 🌐 Live Portfolio
 
@@ -14,12 +14,13 @@
 
 ## 👨‍💻 About
 
-**Data Scientist & ML Engineer** pursuing Master's in Data Science at Rutgers University (GPA: 3.6/4.0) with **5+ internships** and **2+ years professional experience** across IT, fintech, and retail. 
+**Data Scientist & ML Engineer** graduated with a Master's in Data Science at Rutgers University (GPA: 3.6/4.0) with **5+ internships** and **2+ years professional experience** across IT, fintech, and retail. 
 
 **Specialization:**
 - 🏗️ **Data Engineering:** ETL pipelines (Airflow, Spark, dbt), cloud data warehousing (Snowflake, Azure), real-time streaming (Kafka)
 - 🤖 **Machine Learning:** Classification (LightGBM, XGBoost), recommendation engines, demand forecasting, production model deployment
 - 📊 **ML Ops & Production:** Model monitoring (MLflow), calibration, threshold optimization, SHAP explainability, containerization
+- 🧠 **LLM / HPC Systems:** PyTorch training stacks, SLURM jobs, FSDP sharding, multi-node workflows, multi-agent architecture
 - 📈 **Business Intelligence:** Dashboarding (Power BI, Tableau, Superset), data visualization, SQL optimization, KPI analysis
 - 🚀 **Agentic AI:** LangChain/LangGraph workflows, RAG systems, multi-agent orchestration
 
@@ -32,8 +33,9 @@
 | Project | Domain | Key Achievements |
 |---------|--------|------------------|
 | **NYC TLC Analytics Pipeline** | Data Eng + ML | Monthly ETL (Airflow), medallion warehouse, LightGBM demand forecast, MLflow monitoring |
-| **Loan Default Risk Scorer** | ML + DS | 0.7567 AUC, 63.38% calibration improvement, $7.3M business impact, SHAP explainability |
+| **LLM Pre-Training System: GPT-2 to 1B-Parameter Multi-Agent Architecture on HPC** | LLM + HPC | PyTorch + SLURM + FSDP, branch-per-phase training workflow, multi-agent system |
 | **The Model Forge** | MLOps | Turn-based ML simulator, monorepo, contract-first API, leaderboard system |
+| **Loan Default Risk Scorer** | ML + DS | 0.7567 AUC, 63.38% calibration improvement, $7.3M business impact, SHAP explainability |
 
 
 ## 💻 Technical Skills by Domain
@@ -93,42 +95,6 @@
 
 ---
 
-## 📱 Portfolio Website Features
-
-### 🎨 **Modern, Recruiter-Friendly Design**
-- Clean, professional dark/light theme with seamless toggle
-- Mobile-optimized with responsive navigation
-- Interactive project section with live demos (NYC TLC Analytics, The Model Forge)
-- Direct GitHub links for code exploration
-
-### 📊 **Comprehensive Content**
-- **Experience Timeline:** 7 career positions with quantified impact
-- **Skills Matrix:** 60+ technologies organized by domain
-- **Projects Showcase:** 5+ interactive projects with tech stacks and results
-- **Education:** Rutgers MS in Data Science (3.6 GPA) + 3 professional certifications
-
-### Hosting & Deployment
-- **GitHub Pages** - Free, reliable hosting
-- **Custom Domain Ready** - Easy domain configuration
-- **HTTPS Enabled** - Secure by default
-- **Automatic Deployment** - Updates on git push
-
-## � Quick Links for Hiring Managers
-
-### 👤 Profile & Contact
-- **Portfolio:** https://rushikeshdhumal.github.io
-- **GitHub:** https://github.com/rushikeshdhumal
-- **LinkedIn:** https://linkedin.com/in/rushikeshdhumal/
-- **Email:** r.dhumal@rutgers.edu
-
-### 🎯 Role-Specific Project Links
-- **Data Engineering roles:** NYC TLC Analytics Pipeline (Airflow, Snowflake, dbt)
-- **Data Science roles:** Loan Default Risk Scorer, Gaming Churn Prediction, E-commerce Recommendation
-- **ML Engineering roles:** The Model Forge, ATHENA MLOps Platform
-- **BI/Analytics roles:** NYC TLC Dashboards, Trading Platform, Nestle Sales Analytics
-
----
-
 ## 🤝 Connect With Me
 
 - **Email**: [r.dhumal@rutgers.edu](mailto:r.dhumal@rutgers.edu)
@@ -143,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### 🎯 **Interested in collaborating or hiring?**
-I'm actively seeking roles in **Data Engineering**, **Data Science**, **ML Engineering**, and **Business Intelligence**. Whether it's building production ML pipelines, designing data warehouses, or creating scalable analytics platforms, I'm ready to contribute.
+### 🎯 **Interested in collaborating?**
+I'm actively seeking roles in **Data Engineering**, **Data Science**, **Machine Learning Engineering**, **LLM / HPC Systems**, and **Business Intelligence**. Whether it's building production ML pipelines, designing data warehouses, training large models on HPC, or creating scalable analytics platforms, I'm ready to contribute.
 
 **[Explore the full portfolio →](https://rushikeshdhumal.github.io)**
