@@ -377,6 +377,49 @@
                     </div>
                 </div>
 
+                <!-- Profile RAG Agent -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">Profile RAG Agent</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/profile-rag-agent" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" style="display: none;">
+                                <i class="fas fa-play"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">FastAPI</span>
+                        <span class="tech-item">React + Vite</span>
+                        <span class="tech-item">Chroma</span>
+                        <span class="tech-item">FastEmbed (ONNX)</span>
+                        <span class="tech-item">Docker</span>
+                    </div>
+                    <p class="project-description collapsed">Open-source RAG system for conversational profile discovery: candidates upload resumes, LinkedIn/Scholar text, GitHub links, and notes, and recruiters chat with the profile via a shareable URL with no installation required. Multi-source ingestion (PDF/Markdown resumes, pasted text, FAQs, blog notes, public GitHub) is embedded locally with FastEmbed ONNX (all-MiniLM-L6-v2, no GPU needed) and stored in a disk-based Chroma vector store, with retrieval-augmented answers tied to sources via source-aware boosting. Supports any OpenAI-compatible LLM backend (NVIDIA NIM, Groq, Ollama), an owner-gated builder protected by an OWNER_SECRET, and free deployment via Docker/Compose or Hugging Face Spaces.</p>
+                </div>
+
+                <!-- DS-Crew: Multi-Agent Data Science Pipeline -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <h2 class="project-title">DS-Crew: Multi-Agent Data Science Pipeline</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/ml-agent-structured-data" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">CrewAI</span>
+                        <span class="tech-item">Scikit-learn / XGBoost</span>
+                        <span class="tech-item">Optuna</span>
+                        <span class="tech-item">MLflow</span>
+                        <span class="tech-item">Pydantic</span>
+                    </div>
+                    <p class="project-description collapsed">CrewAI-based multi-agent system that automates the full data-science lifecycle for structured/tabular data: EDA, cleaning, feature engineering, model selection, hyperparameter optimization, evaluation, and metadata logging. Agents propose actions while strictly-typed Python tools execute them, keeping raw data out of LLM context, with human-in-the-loop approval gates for cleaning plans, feature engineering, and final model selection. Layered validation (Pydantic schemas, dataset checks, task-level guardrails), a fixed model registry (XGBoost, LightGBM, CatBoost, scikit-learn) tuned via budget-capped Optuna search, and automatic MLflow experiment logging keep runs deterministic and reproducible. A headless AUTO_APPROVE mode supports unattended runs, with all auto-approvals tagged in MLflow.</p>
+                </div>
+
                 <!-- The Model Forge: Turn-based ML Production Simulator -->
                 <div class="project-showcase">
                     <div class="project-header">
