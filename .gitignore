@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (in case tooling is added later)
+node_modules/
+
+# Environment/secrets
+.env
+.env.local
+
+# Claude Code
+CLAUDE.md
+.claude/
