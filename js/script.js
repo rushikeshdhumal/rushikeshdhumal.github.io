@@ -4,44 +4,47 @@
 'use strict';
 
 // Theme Management
+// Dark is the CSS default; an explicit OS "light" preference or a saved
+// choice overrides it via the data-theme attribute. The toggle swaps an
+// inline SVG (sun/moon) and persists the choice in localStorage.
 class ThemeManager {
     constructor() {
+        this.root = document.documentElement;
         this.themeToggle = document.getElementById('theme-toggle');
         this.themeIcon = document.getElementById('theme-icon');
         this.themeText = document.getElementById('theme-text');
+        this.SUN = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/>';
+        this.MOON = '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>';
         this.init();
     }
 
+    // The theme actually being displayed right now.
+    effectiveTheme() {
+        const attr = this.root.getAttribute('data-theme');
+        if (attr) return attr;
+        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
     init() {
-        this.loadTheme();
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+            this.root.setAttribute('data-theme', saved);
+        }
+        this.paint(this.effectiveTheme());
         this.themeToggle?.addEventListener('click', () => this.toggleTheme());
     }
 
     toggleTheme() {
-        const html = document.documentElement;
-        const currentTheme = html.getAttribute('data-theme');
-        
-        if (currentTheme === 'dark') {
-            html.removeAttribute('data-theme');
-            this.themeIcon.className = 'fas fa-moon';
-            this.themeText.textContent = 'Dark Mode';
-            localStorage.setItem('theme', 'light');
-        } else {
-            html.setAttribute('data-theme', 'dark');
-            this.themeIcon.className = 'fas fa-sun';
-            this.themeText.textContent = 'Light Mode';
-            localStorage.setItem('theme', 'dark');
-        }
+        const next = this.effectiveTheme() === 'dark' ? 'light' : 'dark';
+        this.root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.paint(next);
     }
 
-    loadTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        
-        if (savedTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            this.themeIcon.className = 'fas fa-sun';
-            this.themeText.textContent = 'Light Mode';
-        }
+    // Show the icon/label for the theme you'd switch TO.
+    paint(theme) {
+        if (this.themeIcon) this.themeIcon.innerHTML = theme === 'dark' ? this.SUN : this.MOON;
+        if (this.themeText) this.themeText.textContent = theme === 'dark' ? 'light' : 'dark';
     }
 }
 
@@ -91,8 +94,9 @@ class NavigationManager {
             anchor.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = anchor.getAttribute('href');
+                if (!targetId || targetId === '#') { this.closeMobileMenu(); return; }
                 const target = document.querySelector(targetId);
-                
+
                 if (target) {
                     // Check if we're on projects page and need to go back to main content
                     const projectsPage = document.getElementById('projects-page');
@@ -201,24 +205,20 @@ class ProjectsManager {
 
     toggleDemo(demoId) {
         const demo = document.getElementById(demoId);
-        if (demo) {
-            const isVisible = demo.style.display !== 'none';
-            demo.style.display = isVisible ? 'none' : 'block';
-            
-            // Update button text
-            const button = document.querySelector(`[data-demo="${demoId}"]`);
-            if (button) {
-                const icon = button.querySelector('i');
-                const text = button.querySelector('span') || button.childNodes[button.childNodes.length - 1];
-                
-                if (isVisible) {
-                    icon.className = 'fas fa-play';
-                    if (text) text.textContent = ' Live Demo';
-                } else {
-                    icon.className = 'fas fa-pause';
-                    if (text) text.textContent = ' Hide Demo';
-                }
-            }
+        if (!demo) return;
+
+        const isVisible = demo.style.display !== 'none';
+        demo.style.display = isVisible ? 'none' : 'block';
+
+        // Flip only the trailing text label; the inline SVG icon stays put.
+        const button = document.querySelector(`[data-demo="${demoId}"]`);
+        if (!button) return;
+        button.setAttribute('aria-expanded', String(!isVisible));
+
+        const labelNode = button.childNodes[button.childNodes.length - 1];
+        if (labelNode && labelNode.nodeType === Node.TEXT_NODE) {
+            if (!button.dataset.label) button.dataset.label = labelNode.textContent;
+            labelNode.textContent = isVisible ? button.dataset.label : ' Hide';
         }
     }
 }
@@ -258,6 +258,36 @@ class ProjectDescriptionManager {
         });
 
         paragraph.insertAdjacentElement('afterend', toggle);
+    }
+}
+
+// Project Category Filtering (Projects page)
+// Chips carry data-filter; cards carry data-category. "all" shows everything.
+class ProjectFilterManager {
+    constructor() {
+        this.chips = Array.from(document.querySelectorAll('.filter-chip'));
+        this.cards = Array.from(document.querySelectorAll('.project-showcase[data-category]'));
+        this.count = document.getElementById('filter-count');
+        if (this.chips.length && this.cards.length) this.init();
+    }
+
+    init() {
+        this.chips.forEach((chip) => {
+            chip.addEventListener('click', () => this.apply(chip.getAttribute('data-filter'), chip));
+        });
+    }
+
+    apply(filter, activeChip) {
+        this.chips.forEach((c) => c.setAttribute('aria-pressed', c === activeChip ? 'true' : 'false'));
+
+        let shown = 0;
+        this.cards.forEach((card) => {
+            const match = filter === 'all' || card.getAttribute('data-category') === filter;
+            card.classList.toggle('is-hidden', !match);
+            if (match) shown++;
+        });
+
+        if (this.count) this.count.textContent = `showing ${shown} of ${this.cards.length}`;
     }
 }
 
@@ -362,6 +392,7 @@ class PortfolioApp {
         this.navigationManager = null;
         this.projectsManager = null;
         this.projectDescriptionManager = null;
+        this.projectFilterManager = null;
         this.scrollAnimations = null;
         this.performanceMonitor = null;
         this.init();
@@ -383,6 +414,7 @@ class PortfolioApp {
             this.navigationManager = new NavigationManager();
             this.projectsManager = new ProjectsManager();
             this.projectDescriptionManager = new ProjectDescriptionManager();
+            this.projectFilterManager = new ProjectFilterManager();
             this.scrollAnimations = new ScrollAnimations();
             this.performanceMonitor = new PerformanceMonitor();
 
@@ -409,9 +441,6 @@ class PortfolioApp {
         }, 16); // ~60fps
 
         window.addEventListener('scroll', throttledScroll);
-
-        // Preload critical resources
-        this.preloadResources();
     }
 
     handleResize() {
@@ -424,15 +453,6 @@ class PortfolioApp {
     handleScroll() {
         // Add any scroll-based functionality here
         // Currently handled by NavigationManager
-    }
-
-    preloadResources() {
-        // Preload critical fonts or images if needed
-        const fontAwesome = document.createElement('link');
-        fontAwesome.rel = 'preload';
-        fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
-        fontAwesome.as = 'style';
-        document.head.appendChild(fontAwesome);
     }
 
     destroy() {
