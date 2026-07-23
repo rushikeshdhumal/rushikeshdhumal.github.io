@@ -1,4 +1,4 @@
-# Rushikesh Dhumal – Data Scientist, ML Engineer, Data Engineer
+# Rushikesh Dhumal — AI/ML Engineer
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Frushikeshdhumal.github.io)](https://rushikeshdhumal.github.io)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue)](https://rushikeshdhumal.github.io)
@@ -14,7 +14,7 @@
 
 ## 👨‍💻 About
 
-**Data Scientist & ML Engineer** graduated with a Master's in Data Science at Rutgers University (GPA: 3.6/4.0) with **5+ internships** and **2+ years professional experience** across IT, fintech, and retail. 
+**AI/ML Engineer** with an M.S. in Data Science from Rutgers University (GPA: 3.6/4.0), with **5 internships** and **2+ years professional experience** across IT, fintech, and retail. I build production ML systems, LLM & agentic pipelines, and the data engineering underneath them.
 
 **Specialization:**
 - 🏗️ **Data Engineering:** ETL pipelines (Airflow, Spark, dbt), cloud data warehousing (Snowflake, Azure), real-time streaming (Kafka)
@@ -30,12 +30,16 @@
 
 ## 🚀 Featured Projects
 
-| Project | Domain | Key Achievements |
-|---------|--------|------------------|
-| **NYC TLC Analytics Pipeline** | Data Eng + ML | Monthly ETL (Airflow), medallion warehouse, LightGBM demand forecast, MLflow monitoring |
-| **LLM Pre-Training System: GPT-2 to 1B-Parameter Multi-Agent Architecture on HPC** | LLM + HPC | PyTorch + SLURM + FSDP, branch-per-phase training workflow, multi-agent system |
-| **The Model Forge** | MLOps | Turn-based ML simulator, monorepo, contract-first API, leaderboard system |
-| **Loan Default Risk Scorer** | ML + DS | 0.7567 AUC, 63.38% calibration improvement, $7.3M business impact, SHAP explainability |
+Projects on the site are grouped into four categories — **Agentic AI & LLMs**, **ML & Predictive Modeling**, **Data Engineering & MLOps**, and **Interactive Apps & Simulations** — and filterable on the Projects page.
+
+| Project | Category | Key Achievements |
+|---------|----------|------------------|
+| **DS-Crew: Multi-Agent Data Science Pipeline** | Agentic AI & LLMs | CrewAI agents automate the full DS lifecycle; strictly-typed tools, human-in-the-loop gates, MLflow logging |
+| **NYC TLC Analytics Pipeline** | Data Engineering & MLOps | Airflow → Snowflake ingestion, dbt medallion warehouse, LightGBM demand forecast, MLflow monitoring, Superset |
+| **LLM Foundry: GPT-2 → 1B-Parameter on HPC** | Agentic AI & LLMs | Pure PyTorch + SLURM + multi-node FSDP, branch-per-phase workflow, ReAct multi-agent layer |
+| **Profile RAG Agent** | Agentic AI & LLMs | Conversational RAG over resumes/profiles; local FastEmbed ONNX + Chroma; shareable recruiter chat |
+| **Home Credit Loan Default Risk Scorer** | ML & Predictive Modeling | 0.7567 AUC, isotonic calibration (63.38% Brier reduction), SHAP, $7.3M modeled savings |
+| **The Model Forge** | Interactive Apps & Simulations | Turn-based ML production simulator, contract-first API, PostgreSQL, public leaderboard |
 
 
 ## 💻 Technical Skills by Domain
@@ -110,6 +114,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ### 🎯 **Interested in collaborating?**
-I'm actively seeking roles in **Data Engineering**, **Data Science**, **Machine Learning Engineering**, **LLM / HPC Systems**, and **Business Intelligence**. Whether it's building production ML pipelines, designing data warehouses, training large models on HPC, or creating scalable analytics platforms, I'm ready to contribute.
+I'm actively seeking roles in **AI Engineering**, **Data Science**, **Machine Learning Engineering**, **Data Engineering**, and **Business Intelligence**. Whether it's building production ML pipelines, designing data warehouses, training large models on HPC, or creating scalable analytics platforms, I'm ready to contribute.
 
 **[Explore the full portfolio →](https://rushikeshdhumal.github.io)**

@@ -3,619 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rushikesh Dhumal - Data Scientist</title>
-    <meta name="description" content="Data Scientist and Machine Learning Engineer with expertise in Python, ML, Cloud Computing, and Data Engineering.">
-    <meta name="keywords" content="Data Science, Machine Learning, Python, AWS, Azure, Analytics, AI">
+    <title>Rushikesh Dhumal — AI/ML Engineer</title>
+    <meta name="description" content="Rushikesh Dhumal — AI/ML Engineer building production ML systems, LLM & agentic pipelines, and the data engineering underneath them.">
+    <meta name="keywords" content="AI/ML Engineer, Machine Learning, LLM, Agentic AI, MLOps, Data Engineering, Python, PyTorch">
     <meta name="author" content="Rushikesh Dhumal">
-        <link rel="canonical" href="https://rushikeshdhumal.github.io/">
+    <link rel="canonical" href="https://rushikeshdhumal.github.io/">
 
-        <!-- Open Graph -->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Rushikesh Dhumal - Data Scientist">
-        <meta property="og:description" content="Data Scientist and Machine Learning Engineer with expertise in Python, ML, Cloud Computing, and Data Engineering.">
-        <meta property="og:url" content="https://rushikeshdhumal.github.io/">
-        <meta property="og:site_name" content="Rushikesh Dhumal Portfolio">
-        <meta property="og:locale" content="en_US">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rushikesh Dhumal — AI/ML Engineer">
+    <meta property="og:description" content="Production ML systems, LLM & agentic pipelines, and the data engineering underneath them.">
+    <meta property="og:url" content="https://rushikeshdhumal.github.io/">
+    <meta property="og:site_name" content="Rushikesh Dhumal Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
 
-        <meta name="robots" content="index, follow">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rushikesh Dhumal — AI/ML Engineer">
+    <meta name="twitter:description" content="Production ML systems, LLM & agentic pipelines, and the data engineering underneath them.">
 
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Rushikesh Dhumal - Data Scientist">
-        <meta name="twitter:description" content="Data Scientist and Machine Learning Engineer with expertise in Python, ML, Cloud Computing, and Data Engineering.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rushikesh Dhumal",
+        "url": "https://rushikeshdhumal.github.io/",
+        "jobTitle": "AI/ML Engineer",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Rutgers University"
+        },
+        "sameAs": [
+            "https://linkedin.com/in/rushikeshdhumal/",
+            "https://github.com/rushikeshdhumal"
+        ]
+    }
+    </script>
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Rushikesh Dhumal",
-            "url": "https://rushikeshdhumal.github.io/",
-            "jobTitle": "Data Scientist & Machine Learning Engineer",
-            "alumniOf": {
-                "@type": "CollegeOrUniversity",
-                "name": "Rutgers University"
-            },
-            "sameAs": [
-                "https://linkedin.com/in/rushikeshdhumal/",
-                "https://github.com/rushikeshdhumal"
-            ]
-        }
-        </script>
-    
-    <!-- External Libraries -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-left">
-                    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                        <i class="fas fa-bars"></i>
-                        <span>Menu</span>
-                    </button>
-                </div>
-                <div class="nav-center" id="nav-center">
-                    <ul id="nav-menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#" id="projects-link">Projects</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-right">
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon" id="theme-icon"></i>
-                        <span id="theme-text">Dark Mode</span>
-                    </button>
-                </div>
+        <div class="wrap nav-content">
+            <div class="brand mono"><span class="p">~/</span>rushikesh-dhumal</div>
+            <div class="nav-center" id="nav-center">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#" id="projects-link">projects</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+                    <span id="theme-text">theme</span>
+                </button>
+<button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+                    <span>menu</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <div id="main-content">
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Rushikesh Dhumal</h1>
-                <p>Data Scientist & Machine Learning Engineer</p>
-                <div class="hero-cta-group">
-                    <a href="#about" class="cta-button">Explore My Work</a>
-                    <button class="cta-button cta-button-secondary" data-open-projects="true" type="button">View Projects</button>
+<section id="home" class="hero"><div class="wrap">
+            <div class="term">
+                <div class="term-bar">
+                    <span class="dot r"></span><span class="dot a"></span><span class="dot g"></span>
+                    <span class="t">rushikesh@ml — zsh — 96×32</span>
                 </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title fade-in">About Me</h2>
-                <div class="about-content fade-in">
-                    <div class="about-text">
-                        <p>I'm a passionate Data Scientist pursuing my Master's in Data Science at Rutgers University</p>
-                        <p>Throughout my career, I've completed 5 internships and 2 years of professional experience
-                            across various industries, where I've built production-grade ML pipelines, developed
-                            NLP-driven recommendation systems, and optimized data infrastructure for enterprise-scale
-                            applications.</p>
-                        <p>I hold 3+ professional certifications including Microsoft Azure Data Scientist Associate
-                            DP-100, IBM Data Science Professional Certificate, and Codecademy Data Scientist Career
-                            Path. I'm particularly interested in the intersection of AI and business strategy,
-                            focusing on creating solutions that deliver measurable impact.</p>
+                <div class="term-body">
+                    <div class="ln"><span class="pr">➜</span> ~ <span class="fl">whoami</span></div>
+                    <div class="who">
+                        <div class="who-row">
+                            <!-- Photo renders automatically once docs/assets/headshot.jpg exists; the "RD" monogram is the fallback until then. -->
+                            <img class="avatar" src="docs/assets/headshot.jpg" alt="Rushikesh Dhumal" width="60" height="60"
+                                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+                            <span class="avatar" style="display:none" aria-hidden="true">RD</span>
+                            <h1>Rushikesh Dhumal</h1>
+                        </div>
+                        <div class="role">AI/ML Engineer<span class="cursor"></span></div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="container">
-                <h2 class="section-title fade-in">Technical Skills</h2>
-                <div class="skills-grid fade-in">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming & Scripting</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">PowerShell</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">SAS</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">GNU Octave</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> Machine Learning & AI</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Keras</span>
-                            <span class="skill-tag">XGBoost</span>
-                            <span class="skill-tag">AutoML</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">NLP (spaCy, NLTK)</span>
-                            <span class="skill-tag">Ensemble Methods</span>
-                            <span class="skill-tag">LLM Fine-tuning</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Data Engineering & ETL</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">NoSQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Databricks</span>
-                            <span class="skill-tag">Apache Kafka</span>
-                            <span class="skill-tag">Airflow</span>
-                            <span class="skill-tag">Snowflake</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-cloud"></i> Cloud & Big Data</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Spark</span>
-                            <span class="skill-tag">Hadoop</span>
-                            <span class="skill-tag">Azure ML Studio</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                            <span class="skill-tag">Azure AI Foundry</span>
-                            <span class="skill-tag">AWS RDS</span>
-                            <span class="skill-tag">AWS S3</span>
-                            <span class="skill-tag">AWS SageMaker</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-chart-line"></i> Visualization & BI</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Power BI</span>
-                            <span class="skill-tag">Tableau</span>
-                            <span class="skill-tag">Qlik Sense</span>
-                            <span class="skill-tag">Looker Studio</span>
-                            <span class="skill-tag">Streamlit</span>
-                            <span class="skill-tag">Oracle NetSuite</span>
-                            <span class="skill-tag">MS Excel</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> Agentic AI</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">LangChain, LangGraph</span>
-                            <span class="skill-tag">Tool/Function Calling</span>
-                            <span class="skill-tag">ReAct (Reasoning + Acting)</span>
-                            <span class="skill-tag">OpenAI Assistants API</span>
-                            <span class="skill-tag">Evaluation Frameworks</span>
-                            <span class="skill-tag">RAG-Powered Agents</span>
-                            <span class="skill-tag">Multi-Agent Systems</span>
-                            <span class="skill-tag">Guardrails & Safety Constraints</span>
-                            <span class="skill-tag">Chain-of-Thought Prompting</span>
-                            <span class="skill-tag">Human-in-the-Loop (HITL)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience">
-            <div class="container">
-                <h2 class="section-title fade-in">Experience</h2>
-                <div class="timeline fade-in">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">June 2025 — December 2025</div>
-                            <div class="timeline-title">Software Engineering Intern</div>
-                            <div class="timeline-company">Micronotes</div>
-                            <p>Designing, implementing, testing, and deploying production-grade features using Azure DevOps that support new product initiatives and prescreen campaign automation. Building and optimizing data pipelines (Python, Spark) that ingest large datasets, process campaign logic, and interact with third-party APIs.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">April 2025 — May 2025</div>
-                            <div class="timeline-title">Data Management Analyst</div>
-                            <div class="timeline-company">Rutgers Mason Gross Office of Admissions</div>
-                            <p>Data consolidation & clean-up. Working with Assistant Dean & Rutgers Central to obtain and clean the past five years of admissions data. Retrieving and integrating data into Slate from SlideRoom and Airtable to ensure a comprehensive dataset.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">July 2022 — July 2024</div>
-                            <div class="timeline-title">Data Analyst Consultant</div>
-                            <div class="timeline-company">Fields Data</div>
-                            <p>Developed an NLP-driven recommendation engine using Python (spaCy, NLTK) to match 600+ humanitarian organizations with relevant projects, improving partner identification efficiency. Automated data ingestion pipelines for 300+ datasets, leveraging Python APIs, reducing manual workload by 80%.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">March 2022 — May 2022</div>
-                            <div class="timeline-title">Sales Analytics Intern</div>
-                            <div class="timeline-company">Nestle</div>
-                            <p>Analyzed retail data from 1600+ outlets to identify underperforming regions and refine sales forecasts, driving strategic decision-making. Enhanced demand forecasting models, leading to improved customer segmentation and resource allocation.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">March 2022 — May 2022</div>
-                            <div class="timeline-title">Data Mining Intern</div>
-                            <div class="timeline-company">SciSpace</div>
-                            <p>Built a scalable data extraction pipeline using Python & web scraping tools, improving lead generation by 10%. Optimized data retrieval processes, integrating automation tools like Mailscoop.io, Skrapp.io, and Hunter.io.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">April 2021 — May 2022</div>
-                            <div class="timeline-title">Data Analyst Intern</div>
-                            <div class="timeline-company">Fields Data</div>
-                            <p>Automated data management pipelines using Python, APIs, and web scraping (BeautifulSoup), streamlining data consolidation and reporting. Developed interactive dashboards in Power BI & Google Looker Studio, enhancing data-driven decision-making.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">October 2020 — December 2020</div>
-                            <div class="timeline-title">MIS Data Management Intern</div>
-                            <div class="timeline-company">Podium Systems</div>
-                            <p>Data consolidation, wrangling, and visualization using Microsoft Excel. Tested website UI/UX and prepared a BRD (Business Requirement Document) suggesting improvements.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <div class="container">
-                <h2 class="section-title fade-in">Education & Certifications</h2>
-                <div class="edu-cert-grid fade-in">
-                    <div class="edu-cert-card">
-                        <h3 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h3>
-                        <div style="text-align: center;">
-                            <h4 style="margin-bottom: 0.5rem;">Master of Science in Data Science</h4>
-                            <p style="font-weight: 600;">Rutgers University, New Brunswick</p>
-                            <p>GPA: 3.57/4.0</p>
-                            <p style="color: var(--text-muted);">August 2024 — May 2026</p>
-                        </div>
-                    </div>
-                    <div class="edu-cert-card">
-                        <h3 class="card-title"><i class="fas fa-certificate"></i> Certifications</h3>
-                        <div class="cert-item">
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/RushikeshDhumal-6676/EC46B267F5999D57?sharingId=3B24B3C5065BEE27" class="cert-link" target="_blank" rel="noopener noreferrer">
-                                <h4>Microsoft Azure Data Scientist Associate DP-100</h4>
-                                <p style="color: var(--text-muted); font-size: 0.9rem;">July 2025</p>
-                            </a>
-                        </div>
-                        <div class="cert-item">
-                            <a href="https://www.linkedin.com/learning/certificates/071da38bb9ffad031039321c651114a28720bbfa2fe67eddd68cd1947add1be2?trk=share_certificate" class="cert-link" target="_blank" rel="noopener noreferrer">
-                                <h4>Snowflake Data Engineering Professional Certificate</h4>
-                            </a>
-                        </div>
-                        <div class="cert-item">
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PAK5QW9RYMTJ" class="cert-link" target="_blank" rel="noopener noreferrer">
-                                <h4>IBM Data Science Professional Certificate</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title fade-in">Let's Connect</h2>
-                <div class="contact-content fade-in">
-                    <p>I'm always interested in discussing new opportunities, collaborations, or just connecting with
-                        fellow data enthusiasts. Feel free to reach out!</p>
-                    <div class="contact-links">
-                        <a href="mailto:r.dhumal@rutgers.edu" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
+                    <div class="ln" style="margin-top:14px"><span class="pr">➜</span> ~ <span class="fl">cat</span> bio.txt</div>
+                    <p class="tagline">I build production ML systems, LLM &amp; agentic pipelines, and the data engineering underneath them —
+                        from ingestion to deployment and monitoring. M.S. Data Science @ Rutgers · 2 yrs professional + 2+ yrs internships.</p>
+                    <div class="cta">
+                        <button class="btn pri" data-open-projects="true" type="button">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6M12 19h8"/></svg> view projects
+                        </button>
+                        <!-- Résumé download -->
+                        <a class="btn" href="docs/assets/resume.pdf" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg> resume.pdf
                         </a>
-                        <a href="https://linkedin.com/in/rushikeshdhumal/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
+                        <a class="btn" href="https://github.com/rushikeshdhumal" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> github
                         </a>
-                        <a href="https://github.com/rushikeshdhumal" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="tel:+17326850337" class="contact-link">
-                            <i class="fas fa-phone"></i>
-                            <span>Call</span>
+                        <a class="btn" href="https://linkedin.com/in/rushikeshdhumal" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.3 8.3h4.4V24H.3V8.3ZM8 8.3h4.2v2.14h.06c.59-1.05 2.03-2.16 4.17-2.16 4.46 0 5.28 2.83 5.28 6.5V24h-4.4v-6.9c0-1.64-.03-3.75-2.3-3.75-2.3 0-2.65 1.79-2.65 3.63V24H8V8.3Z"/></svg> linkedin
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div></header>
+
+        <section id="about"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">about</span></div>
+            <h2 class="sec-h">Engineer across the full ML lifecycle</h2>
+            <p class="sec-sub">I'm comfortable from a Spark ingestion job to an FSDP training run to a calibrated model in production.
+                I hold a Microsoft Azure Data Scientist Associate (DP-100) certification and care about systems that are
+                reproducible, observable, and actually shipped — not notebooks that die on a laptop.</p>
+        </div></section>
+
+        <section id="projects-featured"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">featured</span></div>
+            <h2 class="sec-h">Selected work</h2>
+            <p class="sec-sub">Three representative builds. The full catalog is organized by domain and filterable.</p>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-top"><span class="cat">Agentic AI &amp; LLMs</span>
+                        <span class="icn"><a href="https://github.com/rushikeshdhumal/ml-agent-structured-data" target="_blank" rel="noopener noreferrer" aria-label="DS-Crew on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg></a></span>
+                    </div>
+                    <h3>DS-Crew — Multi-Agent DS Pipeline</h3>
+                    <p>CrewAI system automating the full data-science lifecycle on tabular data: EDA, cleaning, feature engineering,
+                        model selection, HPO and MLflow logging — with human-in-the-loop gates and typed tools keeping raw data out of LLM context.</p>
+                    <div class="tech"><span class="tag">CrewAI</span><span class="tag">XGBoost</span><span class="tag">Optuna</span><span class="tag">MLflow</span><span class="tag">Pydantic</span></div>
+                </article>
+                <article class="card">
+                    <div class="card-top"><span class="cat">Data Engineering &amp; MLOps</span>
+                        <span class="icn"><a href="https://github.com/rushikeshdhumal/nyc-tlc-analytics" target="_blank" rel="noopener noreferrer" aria-label="NYC TLC on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg></a></span>
+                    </div>
+                    <h3>NYC TLC Analytics Pipeline</h3>
+                    <p>End-to-end Yellow Taxi lakehouse: automated Airflow ingestion → Snowflake, dbt medallion transforms,
+                        LightGBM demand forecasting, causal congestion-pricing analysis, and MLflow monitoring with Superset dashboards.</p>
+                    <div class="tech"><span class="tag">Airflow</span><span class="tag">Snowflake</span><span class="tag">dbt</span><span class="tag">LightGBM</span><span class="tag">MLflow</span></div>
+                </article>
+                <article class="card">
+                    <div class="card-top"><span class="cat">Agentic AI &amp; LLMs</span>
+                        <span class="icn"><a href="https://github.com/rushikeshdhumal/amarel-llm-foundry" target="_blank" rel="noopener noreferrer" aria-label="LLM Foundry on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg></a></span>
+                    </div>
+                    <h3>LLM Foundry — GPT-2 → 1B on HPC</h3>
+                    <p>A 5-phase, branch-per-phase system scaling from distributed smoke tests to a GPT-2-style transformer,
+                        multi-GPU DDP, multi-node FSDP sharding, and a ReAct multi-agent layer — pure PyTorch on Amarel HPC.</p>
+                    <div class="tech"><span class="tag">PyTorch</span><span class="tag">SLURM</span><span class="tag">FSDP</span><span class="tag">NCCL</span><span class="tag">HPC</span></div>
+                </article>
+            </div>
+            <button class="viewall mono" data-open-projects="true" type="button">
+                view all projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+        </div></section>
+
+        <section id="skills"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">skills</span></div>
+            <h2 class="sec-h">Toolchain</h2>
+            <div class="skills">
+                <div class="skblock"><h4>// languages</h4><div class="sktags"><span>Python</span><span>SQL</span><span>TypeScript</span><span>R</span><span>C++</span></div></div>
+                <div class="skblock"><h4>// ml &amp; ai</h4><div class="sktags"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>XGBoost</span><span>Hugging Face</span></div></div>
+                <div class="skblock"><h4>// agentic / llm</h4><div class="sktags"><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>RAG</span><span>Multi-Agent</span></div></div>
+                <div class="skblock"><h4>// data &amp; cloud</h4><div class="sktags"><span>Airflow</span><span>Spark</span><span>dbt</span><span>Snowflake</span><span>Kafka</span><span>Azure</span><span>AWS</span></div></div>
+                <div class="skblock"><h4>// mlops</h4><div class="sktags"><span>MLflow</span><span>Docker</span><span>FastAPI</span><span>SHAP</span><span>Monitoring</span></div></div>
+                <div class="skblock"><h4>// bi &amp; viz</h4><div class="sktags"><span>Power BI</span><span>Tableau</span><span>Superset</span><span>Streamlit</span></div></div>
+            </div>
+        </div></section>
+
+        <section id="experience"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">experience</span></div>
+            <h2 class="sec-h">Where I've worked</h2>
+            <div class="xp">
+                <div class="row"><div class="when">Jun 2025 — Dec 2025</div><div><div class="role-t">AI/ML Software Engineering Intern</div><div class="co mono">Micronotes</div><p>Shipped production features on Azure DevOps and built Python/Spark pipelines that ingest large datasets, run campaign logic, and integrate third-party APIs for prescreen-campaign automation.</p></div></div>
+                <div class="row"><div class="when">Jul 2022 — Jul 2024</div><div><div class="role-t">Data Scientist</div><div class="co mono">Fields Data</div><p>Built an NLP recommendation engine (spaCy, NLTK) matching 600+ humanitarian orgs to projects, and automated ingestion for 300+ datasets — cutting manual workload ~80%.</p></div></div>
+                <div class="row"><div class="when">Apr 2025 — May 2025</div><div><div class="role-t">Data Management Analyst</div><div class="co mono">Rutgers · Mason Gross Admissions</div><p>Consolidated and cleaned five years of admissions data, integrating Slate, SlideRoom and Airtable into one comprehensive dataset.</p></div></div>
+                <div class="row"><div class="when">Mar 2022 — May 2022</div><div><div class="role-t">Data Scientist Intern</div><div class="co mono">Nestlé</div><p>Analyzed retail data from 1600+ outlets to surface underperforming regions and sharpen demand forecasts and customer segmentation.</p></div></div>
+            </div>
+            <a class="viewall mono" href="https://linkedin.com/in/rushikeshdhumal" target="_blank" rel="noopener noreferrer">more on linkedin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div></section>
+
+        <section id="education"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">education</span></div>
+            <h2 class="sec-h">Education &amp; certifications</h2>
+            <div class="two">
+                <div class="edu">
+                    <h4>M.S. Data Science</h4>
+                    <div class="m">Rutgers University — New Brunswick</div>
+                    <div class="m">GPA 3.6 / 4.0 · Aug 2024 — May 2026</div>
+                </div>
+                <div class="edu">
+                    <h4>Certifications</h4>
+                    <ul class="certs">
+                        <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/RushikeshDhumal-6676/EC46B267F5999D57?sharingId=3B24B3C5065BEE27" target="_blank" rel="noopener noreferrer">Microsoft Azure Data Scientist Associate (DP-100)</a></li>
+                        <li><a href="https://www.linkedin.com/learning/certificates/071da38bb9ffad031039321c651114a28720bbfa2fe67eddd68cd1947add1be2?trk=share_certificate" target="_blank" rel="noopener noreferrer">Snowflake Data Engineering Professional</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PAK5QW9RYMTJ" target="_blank" rel="noopener noreferrer">IBM Data Science Professional</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div></section>
+
+        <section id="contact"><div class="wrap fade-in">
+            <div class="kicker mono">## <span class="h">contact</span></div>
+            <h2 class="sec-h">Let's build something</h2>
+            <p class="sec-sub">Open to AI/ML Engineer and Data Scientist roles.</p>
+            <div class="contact">
+                <a class="btn" href="mailto:r.dhumal@rutgers.edu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg> email</a>
+                <a class="btn" href="https://linkedin.com/in/rushikeshdhumal" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.3 8.3h4.4V24H.3V8.3ZM8 8.3h4.2v2.14h.06c.59-1.05 2.03-2.16 4.17-2.16 4.46 0 5.28 2.83 5.28 6.5V24h-4.4v-6.9c0-1.64-.03-3.75-2.3-3.75-2.3 0-2.65 1.79-2.65 3.63V24H8V8.3Z"/></svg> linkedin</a>
+                <a class="btn" href="https://github.com/rushikeshdhumal" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> github</a>
+                <a class="btn" href="tel:+17326850337"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg> call</a>
+            </div>
+        </div></section>
+
+        <footer><div class="wrap foot-row">
+            <span>© 2026 Rushikesh Dhumal — built from scratch, no framework.</span>
+            <span class="foot-links">
+                <a href="https://github.com/rushikeshdhumal" target="_blank" rel="noopener noreferrer">github</a>
+                <a href="https://linkedin.com/in/rushikeshdhumal" target="_blank" rel="noopener noreferrer">linkedin</a>
+            </span>
+        </div></footer>
     </div>
 
     <!-- Projects Page -->
     <div id="projects-page" style="display: none;">
-        <section class="projects-hero">
-            <div class="container">
-                <h1>Interactive Project Showcase</h1>
-                <p>Explore my data science projects with live demonstrations and implementations</p>
-                <button id="back-to-main" class="cta-button" style="margin-top: 1rem;">← Back to Main</button>
-            </div>
-        </section>
+        <section class="projects-hero"><div class="wrap">
+            <button id="back-to-main" class="back-btn" type="button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> back to main
+            </button>
+            <h1><span class="mono" style="color:var(--accent)">~/</span>projects</h1>
+            <p>Every project, grouped by domain. Use the filters to narrow by discipline.</p>
 
-        <div class="container">
-            <div class="projects-grid">
+            <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter projects by category">
+                <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">All <span aria-hidden="true">(9)</span></button>
+                <button class="filter-chip" type="button" data-filter="agentic" aria-pressed="false">Agentic AI &amp; LLMs <span aria-hidden="true">(3)</span></button>
+                <button class="filter-chip" type="button" data-filter="ml" aria-pressed="false">ML &amp; Predictive Modeling <span aria-hidden="true">(3)</span></button>
+                <button class="filter-chip" type="button" data-filter="dataeng" aria-pressed="false">Data Engineering &amp; MLOps <span aria-hidden="true">(1)</span></button>
+                <button class="filter-chip" type="button" data-filter="apps" aria-pressed="false">Interactive Apps &amp; Simulations <span aria-hidden="true">(2)</span></button>
+            </div>
+            <div class="filter-count mono" id="filter-count" aria-live="polite">showing 9 of 9</div>
+        </div></section>
+
+        <div class="wrap">
+            <div class="projects-grid" id="projects-grid">
 
                 <!-- NYC TLC Analytics Pipeline (featured) -->
-                <div class="project-showcase featured">
+                <div class="project-showcase featured" data-category="dataeng">
                     <div class="project-header">
-                        <h2 class="project-title">NYC TLC Analytics Pipeline</h2>
+                        <div>
+                            <div class="project-cat">Data Engineering &amp; MLOps</div>
+                            <h2 class="project-title">NYC TLC Analytics Pipeline</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/nyc-tlc-analytics" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
-                            <button class="project-link" data-demo="demo-nyc-tlc">
-                                <i class="fas fa-play"></i> Live Demo
+                            <button class="project-link" data-demo="demo-nyc-tlc" type="button">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 3 14 9-14 9V3Z"/></svg> Live Demo
                             </button>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">Airflow</span>
-                        <span class="tech-item">Azure Blob</span>
-                        <span class="tech-item">Snowflake</span>
-                        <span class="tech-item">dbt</span>
-                        <span class="tech-item">LightGBM</span>
-                        <span class="tech-item">MLflow</span>
-                        <span class="tech-item">Superset</span>
+                        <span class="tech-item">Airflow</span><span class="tech-item">Azure Blob</span><span class="tech-item">Snowflake</span>
+                        <span class="tech-item">dbt</span><span class="tech-item">LightGBM</span><span class="tech-item">MLflow</span><span class="tech-item">Superset</span>
                     </div>
-                    <p>End‑to‑end NYC Yellow Taxi analytics pipeline: automated monthly ingestion (Airflow → Azure Blob → Snowflake), dbt transformations (medallion bronze→silver→gold), LightGBM demand forecasting + DiD congestion pricing analysis, model monitoring in MLflow, and Superset dashboards for KPIs and heatmaps.</p>
+                    <p>End-to-end NYC Yellow Taxi analytics pipeline: automated monthly ingestion (Airflow → Azure Blob → Snowflake), dbt transformations (medallion bronze→silver→gold), LightGBM demand forecasting + DiD congestion pricing analysis, model monitoring in MLflow, and Superset dashboards for KPIs and heatmaps.</p>
                     <div id="demo-nyc-tlc" class="project-demo" style="display: none;">
                         <div class="demo-placeholder">
                             <img src="docs/assets/DAG.png" alt="NYC TLC pipeline DAG" class="demo-image">
-                            <p style="margin-top:0.5rem;color:var(--text-muted)">Pipeline DAG (Airflow / dbt / retrain flow).</p>
-                            <img src="https://raw.githubusercontent.com/rushikeshdhumal/nyc-tlc-analytics/main/docs/assets/dashboard_overview.jpg" alt="NYC TLC dashboard overview" style="max-width:100%;height:auto;border-radius:6px;">
-                            <p style="margin-top:0.75rem;color:var(--text-muted)">Superset dashboard overview + MLflow experiment tracking (image from repo).</p>
+                            <p style="margin-top:0.5rem">Pipeline DAG (Airflow / dbt / retrain flow).</p>
+                            <img src="https://raw.githubusercontent.com/rushikeshdhumal/nyc-tlc-analytics/main/docs/assets/dashboard_overview.jpg" alt="NYC TLC dashboard overview" class="demo-image">
+                            <p style="margin-top:0.75rem">Superset dashboard overview + MLflow experiment tracking.</p>
                         </div>
                     </div>
-                </div>
-
-                <!-- Profile RAG Agent -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Profile RAG Agent</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/profile-rag-agent" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" style="display: none;">
-                                <i class="fas fa-play"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">FastAPI</span>
-                        <span class="tech-item">React + Vite</span>
-                        <span class="tech-item">Chroma</span>
-                        <span class="tech-item">FastEmbed (ONNX)</span>
-                        <span class="tech-item">Docker</span>
-                    </div>
-                    <p class="project-description collapsed">Open-source RAG system for conversational profile discovery: candidates upload resumes, LinkedIn/Scholar text, GitHub links, and notes, and recruiters chat with the profile via a shareable URL with no installation required. Multi-source ingestion (PDF/Markdown resumes, pasted text, FAQs, blog notes, public GitHub) is embedded locally with FastEmbed ONNX (all-MiniLM-L6-v2, no GPU needed) and stored in a disk-based Chroma vector store, with retrieval-augmented answers tied to sources via source-aware boosting. Supports any OpenAI-compatible LLM backend (NVIDIA NIM, Groq, Ollama), an owner-gated builder protected by an OWNER_SECRET, and free deployment via Docker/Compose or Hugging Face Spaces.</p>
                 </div>
 
                 <!-- DS-Crew: Multi-Agent Data Science Pipeline -->
-                <div class="project-showcase">
+                <div class="project-showcase" data-category="agentic">
                     <div class="project-header">
-                        <h2 class="project-title">DS-Crew: Multi-Agent Data Science Pipeline</h2>
+                        <div>
+                            <div class="project-cat">Agentic AI &amp; LLMs</div>
+                            <h2 class="project-title">DS-Crew: Multi-Agent Data Science Pipeline</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/ml-agent-structured-data" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">CrewAI</span>
-                        <span class="tech-item">Scikit-learn / XGBoost</span>
-                        <span class="tech-item">Optuna</span>
-                        <span class="tech-item">MLflow</span>
-                        <span class="tech-item">Pydantic</span>
+                        <span class="tech-item">CrewAI</span><span class="tech-item">Scikit-learn / XGBoost</span><span class="tech-item">Optuna</span>
+                        <span class="tech-item">MLflow</span><span class="tech-item">Pydantic</span>
                     </div>
                     <p class="project-description collapsed">CrewAI-based multi-agent system that automates the full data-science lifecycle for structured/tabular data: EDA, cleaning, feature engineering, model selection, hyperparameter optimization, evaluation, and metadata logging. Agents propose actions while strictly-typed Python tools execute them, keeping raw data out of LLM context, with human-in-the-loop approval gates for cleaning plans, feature engineering, and final model selection. Layered validation (Pydantic schemas, dataset checks, task-level guardrails), a fixed model registry (XGBoost, LightGBM, CatBoost, scikit-learn) tuned via budget-capped Optuna search, and automatic MLflow experiment logging keep runs deterministic and reproducible. A headless AUTO_APPROVE mode supports unattended runs, with all auto-approvals tagged in MLflow.</p>
                 </div>
 
-                <!-- The Model Forge: Turn-based ML Production Simulator -->
-                <div class="project-showcase">
+                <!-- Profile RAG Agent -->
+                <div class="project-showcase" data-category="agentic">
                     <div class="project-header">
-                        <h2 class="project-title">The Model Forge</h2>
+                        <div>
+                            <div class="project-cat">Agentic AI &amp; LLMs</div>
+                            <h2 class="project-title">Profile RAG Agent</h2>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/The-Model-Forge" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://github.com/rushikeshdhumal/profile-rag-agent" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
-                            <a href="https://model-forge-q7rc.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-play"></i> Play Now
+                            <!-- Live demo hidden until URL is ready; remove style="display:none" and set href to re-enable. -->
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" style="display: none;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg> Live Demo
                             </a>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">MLOps</span>
-                        <span class="tech-item">Model Deployment</span>
-                        <span class="tech-item">Drift Detection</span>
-                        <span class="tech-item">TypeScript</span>
-                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">FastAPI</span><span class="tech-item">React + Vite</span><span class="tech-item">Chroma</span>
+                        <span class="tech-item">FastEmbed (ONNX)</span><span class="tech-item">Docker</span>
                     </div>
-                    <p class="project-description collapsed">The Model Forge is a turn-based machine learning production simulator where you manage a live model through 14 days of incidents, tradeoffs, and operational pressure. Balance precision, recall, cost, freshness, and SLA adherence as you make high-stakes decisions, protect your production pipeline, and aim for the strongest final score. The platform includes account creation, password recovery, save/load, and a public leaderboard, all backed by a contract-first API, PostgreSQL, and a secure monorepo architecture.</p>
-                    <img src="docs/assets/The_Model_Forge.png" alt="The Model Forge game UI screenshot" class="demo-image">
+                    <p class="project-description collapsed">Open-source RAG system for conversational profile discovery: candidates upload resumes, LinkedIn/Scholar text, GitHub links, and notes, and recruiters chat with the profile via a shareable URL with no installation required. Multi-source ingestion (PDF/Markdown resumes, pasted text, FAQs, blog notes, public GitHub) is embedded locally with FastEmbed ONNX (all-MiniLM-L6-v2, no GPU needed) and stored in a disk-based Chroma vector store, with retrieval-augmented answers tied to sources via source-aware boosting. Supports any OpenAI-compatible LLM backend (NVIDIA NIM, Groq, Ollama), an owner-gated builder protected by an OWNER_SECRET, and free deployment via Docker/Compose or Hugging Face Spaces.</p>
                 </div>
 
                 <!-- Amarel LLM Foundry -->
-                <div class="project-showcase">
+                <div class="project-showcase" data-category="agentic">
                     <div class="project-header">
-                        <h2 class="project-title">LLM Pre-Training System: GPT-2 to 1B-Parameter Multi-Agent Architecture on HPC</h2>
+                        <div>
+                            <div class="project-cat">Agentic AI &amp; LLMs</div>
+                            <h2 class="project-title">LLM Pre-Training System: GPT-2 to 1B-Parameter Multi-Agent Architecture on HPC</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/amarel-llm-foundry" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">PyTorch</span>
-                        <span class="tech-item">SLURM</span>
-                        <span class="tech-item">FSDP</span>
-                        <span class="tech-item">HPC</span>
-                        <span class="tech-item">Multi-Agent Architecture</span>
+                        <span class="tech-item">PyTorch</span><span class="tech-item">SLURM</span><span class="tech-item">FSDP</span>
+                        <span class="tech-item">HPC</span><span class="tech-item">Multi-Agent Architecture</span>
                     </div>
                     <p class="project-description collapsed">A 5-phase, branch-per-phase LLM training system on Amarel HPC that evolves from distributed smoke tests to a GPT-2-style transformer, multi-GPU DDP training, multi-node FSDP sharding, and finally a ReAct-style multi-agent system. Built with pure PyTorch, SLURM, NCCL, TinyStories, and tiktoken, the project emphasizes scalable training workflows, checkpointing, reproducible phase-based development, and a practical path from model pre-training to agentic inference.</p>
                 </div>
 
                 <!-- Home Credit Loan Default Risk Scorer -->
-                <div class="project-showcase">
+                <div class="project-showcase" data-category="ml">
                     <div class="project-header">
-                        <h2 class="project-title">Home Credit Loan Default Risk Scorer</h2>
+                        <div>
+                            <div class="project-cat">ML &amp; Predictive Modeling</div>
+                            <h2 class="project-title">Home Credit Loan Default Risk Scorer</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/home-credit-default" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">LightGBM</span>
-                        <span class="tech-item">SHAP</span>
-                        <span class="tech-item">Scikit-learn</span>
-                        <span class="tech-item">Class Imbalance</span>
-                        <span class="tech-item">Model Calibration</span>
+                        <span class="tech-item">LightGBM</span><span class="tech-item">SHAP</span><span class="tech-item">Scikit-learn</span>
+                        <span class="tech-item">Class Imbalance</span><span class="tech-item">Model Calibration</span>
                     </div>
                     <p class="project-description collapsed">End-to-end machine learning solution for predicting loan default risk on the Home Credit dataset (307k+ applications). Built and optimized a LightGBM model achieving 0.7567 AUC, addressing severe class imbalance (8% default rate, 11.39:1 ratio) through ensemble methods and scale-based weighting. Applied isotonic calibration to improve model reliability (63.38% Brier score reduction). Integrated SHAP explainability for interpretable, production-ready risk assessment. Delivered business impact: $7.3M savings vs. approve-all baseline (13.9% reduction) while maintaining 86.42% approval rate. Includes preprocessing pipeline, feature engineering, threshold optimization, and comprehensive deployment artifacts.</p>
                 </div>
 
-                <!-- Trading and Simulation Platform – Full-Stack Financial Analytics Application -->
-                <div class="project-showcase">
-                    <div class="project-header">
-                        <h2 class="project-title">Trading and Simulation Platform - Full-Stack Financial Analytics Application</h2>
-                        <div class="project-links">
-                            <a href="https://github.com/rushikeshdhumal/stock-sim-trading" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <button class="project-link" data-demo="demo-trading-platform">
-                                <i class="fas fa-play"></i> Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-item">PostgreSQL</span>
-                        <span class="tech-item">Redis</span>
-                        <span class="tech-item">RESTful API</span>
-                        <span class="tech-item">JWT Authentication</span>
-                        <span class="tech-item">Query Optimization</span>
-                        <span class="tech-item">Time-Series Analysis</span>
-                        <span class="tech-item">Financial Analysis</span>
-                    </div>
-                    <p>Built an end-to-end financial trading simulation platform processing real-time market data for 10,000+ assets. Designed data
-                        pipelines with multi-tier caching (Redis + PostgreSQL), cutting API latency by 90% and enabling high-throughput analytics.
-                        Developed RESTful APIs with JWT authentication and input validation for real-time portfolio, ROI, and risk
-                        analytics. Designed PostgreSQL data models optimized for query speed (&lt;100ms) and efficient time-series analysis.
-                        Created interactive dashboards in React for portfolio insights and performance visualization.</p>
-                    <div id="demo-trading-platform" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>-----</h3>
-                            <p>------------</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>------------</li>
-                                <li>------------</li>
-                                <li>------------</li>
-                                <li>------------</li>
-                                <li>------------</li>
-                            </ul>
-                            <p><em>------------</em></p>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Gaming Churn Prediction -->
-                <div class="project-showcase">
+                <div class="project-showcase" data-category="ml">
                     <div class="project-header">
-                        <h2 class="project-title">Gaming Player Behavior Analysis & Churn Prediction</h2>
+                        <div>
+                            <div class="project-cat">ML &amp; Predictive Modeling</div>
+                            <h2 class="project-title">Gaming Player Behavior Analysis &amp; Churn Prediction</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/gaming-churn-prediction" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
                             <a href="https://gaming-churn-prediction.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg> Live Demo
                             </a>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">Steam API</span>
-                        <span class="tech-item">Random Forest</span>
-                        <span class="tech-item">XGBoost</span>
-                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">Python</span><span class="tech-item">Steam API</span><span class="tech-item">Random Forest</span>
+                        <span class="tech-item">XGBoost</span><span class="tech-item">PostgreSQL</span>
                     </div>
-                    <p>Engineered churn prediction models using Steam Web API, PostgreSQL, and 50K+ player records,
-                        achieving 89% precision with Random Forest/XGBoost. Implemented statistical hypothesis testing,
-                        time-series feature engineering, and cohort analysis in Python. Generated actionable retention
-                        strategies, potentially reducing churn by 15% and increasing player LTV by $12 per user.</p>
-                    <div id="demo-gaming-churn" class="project-demo" style="display: none;">
-                        <div class="demo-placeholder">
-                            <h3>Churn Prediction Model Demo</h3>
-                            <p>Interactive demo would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Player behavior input form</li>
-                                <li>Real-time churn probability calculation</li>
-                                <li>Feature importance visualization</li>
-                                <li>Model performance metrics</li>
-                                <li>Cohort analysis dashboard</li>
-                            </ul>
-                            <p><em>Click "GitHub" to see the full implementation</em></p>
-                        </div>
-                    </div>
+                    <p>Engineered churn prediction models using the Steam Web API, PostgreSQL, and 50K+ player records, achieving 89% precision with Random Forest / XGBoost. Implemented statistical hypothesis testing, time-series feature engineering, and cohort analysis in Python. Generated actionable retention strategies, potentially reducing churn by 15% and increasing player LTV by $12 per user.</p>
                 </div>
 
                 <!-- SpaceX Prediction -->
-                <div class="project-showcase">
+                <div class="project-showcase" data-category="ml">
                     <div class="project-header">
-                        <h2 class="project-title">SpaceX Falcon9 First Stage Landing Prediction</h2>
+                        <div>
+                            <div class="project-cat">ML &amp; Predictive Modeling</div>
+                            <h2 class="project-title">SpaceX Falcon 9 First-Stage Landing Prediction</h2>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/rushikeshdhumal/SpaceX-Falcon9-Landing-Prediction" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> GitHub
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
                             </a>
-                            <button class="project-link" data-demo="demo-spacex">
-                                <i class="fas fa-play"></i> Live Demo
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">Web Scraping</span><span class="tech-item">ML Classification</span><span class="tech-item">API Integration</span>
+                        <span class="tech-item">BeautifulSoup</span><span class="tech-item">Folium</span>
+                    </div>
+                    <p class="project-description collapsed">Predicts the success of a SpaceX Falcon 9 first-stage landing, which directly impacts launch costs. Data is collected from a Wikipedia page via web scraping (BeautifulSoup) and from the SpaceX API, then wrangled and analyzed with SQL, Pandas, Matplotlib, and Folium. Four supervised models (SVM, Decision Tree, K-Nearest Neighbours, and Logistic Regression) are trained and compared on accuracy to find the best predictor of a successful landing.</p>
+                </div>
+
+                <!-- The Model Forge -->
+                <div class="project-showcase" data-category="apps">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-cat">Interactive Apps &amp; Simulations</div>
+                            <h2 class="project-title">The Model Forge</h2>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/The-Model-Forge" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
+                            </a>
+                            <a href="https://model-forge-q7rc.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg> Play Now
+                            </a>
+                            <button class="project-link" data-demo="demo-model-forge" type="button">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg> Screenshot
                             </button>
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-item">Web Scraping</span>
-                        <span class="tech-item">ML Classification</span>
-                        <span class="tech-item">API Integration</span>
-                        <span class="tech-item">BeautifulSoup</span>
-                        <span class="tech-item">Folium</span>
+                        <span class="tech-item">MLOps</span><span class="tech-item">Model Deployment</span><span class="tech-item">Drift Detection</span>
+                        <span class="tech-item">TypeScript</span><span class="tech-item">PostgreSQL</span>
                     </div>
-                    <p>This project aims to predict the success of a SpaceX Falcon 9 first stage landing, which
-                        directly impacts launch costs. The process involves multiple steps: data collection from a
-                        Wikipedia page via web scraping using Python BeautifulSoup and from the SpaceX API, followed
-                        by data wrangling and analysis using various tools like SQL, Pandas, Matplotlib, and Folium.
-                        Finally, four supervised machine learning models (Support Vector Machine, Decision Tree,
-                        K-Nearest Neighbours, and Logistic Regression) are trained and their accuracy is evaluated to
-                        find the best model for predicting successful landings.</p>
-                    <div id="demo-spacex" class="project-demo" style="display: none;">
+                    <p class="project-description collapsed">The Model Forge is a turn-based machine learning production simulator where you manage a live model through 14 days of incidents, tradeoffs, and operational pressure. Balance precision, recall, cost, freshness, and SLA adherence as you make high-stakes decisions, protect your production pipeline, and aim for the strongest final score. The platform includes account creation, password recovery, save/load, and a public leaderboard, all backed by a contract-first API, PostgreSQL, and a secure monorepo architecture.</p>
+                    <div id="demo-model-forge" class="project-demo" style="display: none;">
                         <div class="demo-placeholder">
-                            <h3>Landing Prediction Tool</h3>
-                            <p>Prediction interface would include:</p>
-                            <ul style="text-align: left; margin-top: 1rem;">
-                                <li>Launch parameters input form</li>
-                                <li>Success probability prediction</li>
-                                <li>Historical launch data visualization</li>
-                                <li>Cost savings calculator</li>
-                                <li>Interactive landing site maps</li>
-                            </ul>
-                            <p><em>Model comparison and accuracy metrics included</em></p>
+                            <img src="docs/assets/The_Model_Forge.png" alt="The Model Forge game UI screenshot" class="demo-image">
+                            <p style="margin-top:0.5rem">The Model Forge — live game UI.</p>
                         </div>
                     </div>
                 </div>
 
-                
+                <!-- Trading and Simulation Platform -->
+                <div class="project-showcase" data-category="apps">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-cat">Interactive Apps &amp; Simulations</div>
+                            <h2 class="project-title">Trading &amp; Simulation Platform — Full-Stack Financial Analytics</h2>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rushikeshdhumal/stock-sim-trading" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"/></svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-item">PostgreSQL</span><span class="tech-item">Redis</span><span class="tech-item">RESTful API</span>
+                        <span class="tech-item">JWT Auth</span><span class="tech-item">Query Optimization</span><span class="tech-item">Time-Series</span>
+                    </div>
+                    <p class="project-description collapsed">An end-to-end financial trading simulation platform processing real-time market data for 10,000+ assets. Data pipelines use multi-tier caching (Redis + PostgreSQL), cutting API latency by 90% and enabling high-throughput analytics. RESTful APIs with JWT authentication and input validation serve real-time portfolio, ROI, and risk analytics, backed by PostgreSQL data models optimized for query speed (&lt;100ms) and efficient time-series analysis, with interactive React dashboards for portfolio insights and performance visualization.</p>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
